@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "662960687375",
+    "project_id": "intelizia-gamezi",
+    "storage_bucket": "intelizia-gamezi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662960687375:android:8df106d3a44d6d5faad67a",
+        "android_client_info": {
+          "package_name": "com.example.gamezi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF5w6VVERgqZpn3Rq4ONHk1W6qfWuhCMM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
