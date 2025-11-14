@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gamezi/config/seo.dart';
+import 'package:gamezi/services/ad_services/ad_sense_auto_banner.dart';
 import 'package:gamezi/utils/app_enums.dart';
 import 'package:gamezi/view/screens/body/about_our_work/about_our_work_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -242,10 +243,42 @@ class _HomeBodyState extends State<HomeBody> {
                     padding: EdgeInsets.symmetric(horizontal: _getHorizontalPadding(context)),
                     child: Column(
                       children: [
-                        IntroSection(key: introKey),
+                        Builder(
+                          builder: (_) {
+                            if (context.width < DeviceType.ipad.getMaxWidth()) {
+                              return ProjectsSection(key: projectKey);
+                            } else {
+                              return IntroSection(key: introKey);
+                            }
+                          },
+                        ),
+                        SizedBox(
+                          width: 970,
+                          child: FixedAdsenseBanner(
+                            adSlot: AdsenseAdUnitId.displaySlot,
+                            maxWidth: 970,
+                            minHeight: 90,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 40,
+                        ),
                         Align(alignment: Alignment.centerLeft, child: AboutOurWork()),
                         AboutMeSection(key: aboutKey),
-                        ProjectsSection(key: projectKey),
+                        if (!(context.width < DeviceType.ipad.getMaxWidth())) ...[
+                          ProjectsSection(key: projectKey),
+                          SizedBox(
+                            width: 970,
+                            child: FixedAdsenseBanner(
+                              adSlot: AdsenseAdUnitId.displaySlot,
+                              maxWidth: 970,
+                              minHeight: 90,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 40,
+                          ),
+                        ],
                         ComparisonWithOthersSection(key: comparisonWithOthersKey),
                         const AboutWorkSection(),
                         FasterSection(key: fasterKey),

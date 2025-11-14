@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:gamezi/config/seo.dart';
 import 'package:gamezi/route/router.dart';
+import 'package:gamezi/services/ad_services/ad_sense_auto_banner.dart';
+import 'package:gamezi/utils/app_extensions.dart';
 import 'package:gamezi/utils/colors.dart';
+import 'package:gamezi/view/screens/body/intro/ad_banner.dart';
 
 import 'package:gamezi/view/widgets/game_grid.dart';
+import 'package:gamezi/view/widgets/side_ad_banner.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../home_body.dart';
@@ -68,75 +72,162 @@ class ExploreGameScreen extends StatelessWidget {
           ),
         ),
         child: SafeArea(
-          child: Center(
-            child: LayoutBuilder(
-              builder: (context, constraints) {
-                return ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 1440),
-                  child: Column(
-                    children: [
-                      Expanded(
-                        child: GameGrid(
-                          constraints: constraints,
-                          // gameController: gameController,
-                        ),
-                      ),
-                      Container(
-                        width: double.infinity,
-                        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 24),
-                        decoration: BoxDecoration(
-                          color: Colors.black.withValues(alpha: 0.3),
-                          border: Border(
-                            top: BorderSide(color: Colors.white.withValues(alpha: 0.1)),
-                          ),
-                        ),
-                        child: Row(
+          child: Row(
+            children: [
+              const SideAdBanner(
+                alignment: Alignment.topLeft,
+                padding: EdgeInsets.only(top: 40, left: 20),
+                testMode: true,
+              ),
+              Expanded(
+                child: Center(
+                  child: LayoutBuilder(
+                    builder: (context, constraints) {
+                      return ConstrainedBox(
+                        constraints: const BoxConstraints(maxWidth: 1440),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
                           children: [
-                            // Website URL on the left
-                            Text(
-                              'intelizia.com',
-                              style: TextStyle(
-                                color: Colors.white.withValues(alpha: 0.7),
-                                fontSize: 14,
+                            Expanded(
+                              child: SingleChildScrollView(
+                                child: Column(
+                                  children: [
+                                    GameGrid(
+                                      constraints: constraints,
+                                    ),
+                                    Builder(
+                                      builder: (_) {
+                                        if (context.isMobile) {
+                                          return SizedBox(
+                                            width: 970,
+                                            child: FixedAdsenseBanner(
+                                              adSlot: AdsenseAdUnitId.multiplexSlotVertical,
+                                              adFormat: 'autorelaxed',
+                                              maxWidth: 970,
+                                              minHeight: 600,
+                                            ),
+                                          );
+                                        } else {
+                                          return SizedBox(
+                                            width: 970,
+                                            child: FixedAdsenseBanner(
+                                              adSlot: AdsenseAdUnitId.multiplexSlot,
+                                              adFormat: 'autorelaxed',
+                                              maxWidth: 970,
+                                              minHeight: 250,
+                                            ),
+                                          );
+                                        }
+                                      },
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
-                            const Spacer(),
-                            // Footer links
-                            TextButton(
-                              onPressed: () {
-                                context.goNamed(AppRouteName.terms);
-                              },
-                              child: const Text('Terms', style: TextStyle(color: Colors.white70)),
-                            ),
-                            const SizedBox(width: 20),
-                            TextButton(
-                              onPressed: () {
-                                context.goNamed(
-                                  AppRouteName.dmca,
-                                );
-                              },
-                              child: const Text('DMCA', style: TextStyle(color: Colors.white70)),
-                            ),
-                            const SizedBox(width: 20),
-                            TextButton(
-                              onPressed: () {
-                                context.goNamed(
-                                  AppRouteName.privacy,
-                                );
-                              },
-                              child: const Text(
-                                'Policy',
-                                style: TextStyle(color: Colors.white70),
+                            Container(
+                              width: double.infinity,
+                              padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 24),
+                              decoration: BoxDecoration(
+                                color: Colors.black.withValues(alpha: 0.3),
+                                border: Border(
+                                  top: BorderSide(color: Colors.white.withValues(alpha: 0.1)),
+                                ),
+                              ),
+                              child: Row(
+                                children: [
+                                  // Website URL on the left
+                                  Text(
+                                    'intelizia.com',
+                                    style: TextStyle(
+                                      color: Colors.white.withValues(alpha: 0.7),
+                                      fontSize: 14,
+                                    ),
+                                  ),
+                                  const Spacer(),
+                                  // Footer links
+                                  TextButton(
+                                    onPressed: () {
+                                      context.goNamed(AppRouteName.terms);
+                                    },
+                                    child: const Text('Terms',
+                                        style: TextStyle(color: Colors.white70)),
+                                  ),
+                                  const SizedBox(width: 20),
+                                  TextButton(
+                                    onPressed: () {
+                                      context.goNamed(
+                                        AppRouteName.dmca,
+                                      );
+                                    },
+                                    child: const Text(
+                                      'DMCA',
+                                      style: TextStyle(color: Colors.white70),
+                                    ),
+                                  ),
+                                  const SizedBox(width: 20),
+                                  TextButton(
+                                    onPressed: () {
+                                      context.goNamed(
+                                        AppRouteName.privacy,
+                                      );
+                                    },
+                                    child: const Text(
+                                      'Policy',
+                                      style: TextStyle(color: Colors.white70),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ],
                         ),
-                      ),
-                    ],
+                      );
+                    },
                   ),
-                );
-              },
-            ),
+                ),
+              ),
+              const SideAdBanner(
+                alignment: Alignment.topRight,
+                padding: EdgeInsets.only(top: 40, right: 20),
+                testMode: true,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget multiplexHorizontal(String slot) {
+    return Center(
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxWidth: 970),
+        child: SizedBox(
+          width: double.infinity,
+          height: 280,
+          child: AdsenseBanner(
+            adSlot: slot,
+            format: 'autorelaxed',
+            adFormat: 'autorelaxed',
+            giveWidth: false,
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget multiplexVertical(String slot) {
+    return Center(
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxWidth: 300),
+        child: SizedBox(
+          width: double.infinity,
+          height: 600,
+          child: AdsenseBanner(
+            adSlot: slot,
+            format: 'autorelaxed',
+            adFormat: 'autorelaxed',
+            giveWidth: false,
           ),
         ),
       ),

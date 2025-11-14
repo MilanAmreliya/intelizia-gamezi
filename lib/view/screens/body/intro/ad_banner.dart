@@ -1,62 +1,84 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:pointer_interceptor/pointer_interceptor.dart';
 import 'package:web/web.dart' as web;
-import 'package:flutter/widgets.dart';
 
 class AdsenseBanner extends StatelessWidget {
-  final String adSlot; // your AdSense data-ad-slot
+  final String adSlot;
+  final String format;
   final double height;
-  final double width;
-  final bool testMode; // true => data-adtest="on"
+  final String? adFormat;
+  final String? adLayout;
+  final String? adLayoutKey;
+  final bool? giveWidth;
 
   const AdsenseBanner({
     super.key,
     required this.adSlot,
     this.height = 90,
-    this.width = double.infinity,
-    this.testMode = false,
+    required this.format,
+    this.adFormat,
+    this.adLayout,
+    this.adLayoutKey,
+    this.giveWidth = true,
   });
 
   @override
   Widget build(BuildContext context) {
-    if (!kIsWeb) {
-      return const SizedBox.shrink();
-    }
+    return PointerInterceptor(
+      child: SizedBox(
+        height: height,
+        width: double.infinity,
+        child: HtmlElementView.fromTagName(
+          tagName: 'div',
+          onElementCreated: (element) {
+            final root = element as web.HTMLDivElement;
+            root.style.display = 'block';
+            root.style.width = '100%';
+            root.style.height = '${height}px';
 
-    return SizedBox(
-      height: height,
-      width: width,
-      child: HtmlElementView.fromTagName(
-        tagName: 'div',
-        onElementCreated: (root) {
-          // root is a <div>
-          final div = root as web.HTMLDivElement;
-          div.style.width = '100%';
-          div.style.height = '${height}px';
+            while (root.firstChild != null) {
+              root.removeChild(root.firstChild!);
+            }
 
-          // Create <ins class="adsbygoogle">
-          final ins = web.document.createElement('ins') as web.HTMLElement;
-          ins.className = 'adsbygoogle';
-          ins.style.display = 'block';
-          ins.style.width = '100%';
-          ins.style.height = '${height}px';
+            final ins = web.document.createElement('ins') as web.HTMLElement
+              ..className = 'adsbygoogle'
+              ..style.display = 'block'
+              ..style.width = '100%'
+              ..style.margin = '0 auto'
+              ..style.height = '${height}px'
+              ..setAttribute('data-ad-client', 'ca-pub-2426917250425617');
 
-          ins.setAttribute('data-ad-client', 'ca-pub-2426917250425617');
-          ins.setAttribute('data-ad-slot', adSlot);
-          ins.setAttribute('data-ad-format', 'auto');
-          ins.setAttribute('data-full-width-responsive', 'true');
+            if (adFormat != null) ins.setAttribute('data-ad-format', adFormat!);
+            if (adLayout != null) ins.setAttribute('data-ad-layout', adLayout!);
+            if (adLayoutKey != null) ins.setAttribute('data-ad-layout-key', adLayoutKey!);
+            if (giveWidth != null && giveWidth == true) {
+              ins.setAttribute('data-full-width-responsive', 'true');
+            }
 
-          if (testMode) {
-            ins.setAttribute('data-adtest', 'on');
-          }
+            if (true) {
+              ins.setAttribute('data-adtest', 'on');
+            }
 
-          div.appendChild(ins);
+            root.append(ins);
 
-          // Run: (adsbygoogle = window.adsbygoogle || []).push({});
-          final script = web.document.createElement('script') as web.HTMLScriptElement;
-          script.text = '(adsbygoogle = window.adsbygoogle || []).push({});';
-          div.appendChild(script);
-        },
+            final script = web.document.createElement('script') as web.HTMLScriptElement
+              ..text = '''
+              (function() {
+                function loadAd() {
+                  try {
+                    (window.adsbygoogle = window.adsbygoogle || []).push({});
+                  } catch (e) {
+                    console.log('adsbygoogle error', e);
+                  }
+                }
+                        
+                setTimeout(loadAd, 300);
+              })();
+            ''';
+
+            root.append(script);
+          },
+        ),
       ),
     );
   }

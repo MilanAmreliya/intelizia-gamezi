@@ -4,9 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gamezi/config/seo.dart';
 import 'package:gamezi/route/router.dart';
+import 'package:gamezi/services/ad_services/ad_sense_auto_banner.dart';
 import 'package:gamezi/utils/app_enums.dart';
 import 'package:gamezi/utils/app_extensions.dart';
 import 'package:gamezi/utils/colors.dart';
+import 'package:gamezi/view/screens/body/intro/ad_banner.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gamezi/data/models/game_data_model.dart';
@@ -195,6 +197,7 @@ class _Body extends StatelessWidget {
                   ),
                 ),
               ],
+              inArticle(),
               if (_hasAboutFacts(game.aboutThisGame)) ...[
                 const _SectionDivider(title: 'Genre & Core Skills'),
                 Padding(
@@ -270,6 +273,7 @@ class _Body extends StatelessWidget {
                   ),
                 ),
               ],
+              inArticle(),
               if (game.howToPlay.isNotEmpty) ...[
                 const _SectionDivider(title: 'How to Play (Detailed)'),
                 Padding(
@@ -294,6 +298,21 @@ class _Body extends StatelessWidget {
           ),
         );
       },
+    );
+  }
+
+  Widget inArticle() {
+    return Center(
+      child: SizedBox(
+        width: 970,
+        child: FixedAdsenseBanner(
+          adSlot: AdsenseAdUnitId.inArticleSlot,
+          adFormat: 'fluid',
+          adLayout: 'in-article',
+          maxWidth: 970,
+          minHeight: 200,
+        ),
+      ),
     );
   }
 

@@ -62,7 +62,8 @@ class _GameGridState extends State<GameGrid> {
     return Padding(
         padding: EdgeInsets.all(padding),
         child: GridView.builder(
-          physics: const BouncingScrollPhysics(),
+          physics: const NeverScrollableScrollPhysics(),
+          shrinkWrap: true,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: crossAxisCount,
             crossAxisSpacing: padding,
@@ -71,7 +72,6 @@ class _GameGridState extends State<GameGrid> {
           itemCount: gamesList.length,
           itemBuilder: (context, index) {
             final game = gamesList[index];
-
             return _buildGameItem(context, game);
           },
         ));

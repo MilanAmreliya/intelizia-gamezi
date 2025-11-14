@@ -27,6 +27,16 @@ extension MediaQueryExtension on BuildContext {
   double get width => _size.width;
 
   double get height => _size.height;
+
+  bool get isMobile => MediaQuery.of(this).size.width < DeviceType.ipad.getMaxWidth();
+
+  bool get isTablet =>
+      width > DeviceType.mobile.getMaxWidth() && width <= DeviceType.ipad.getMaxWidth();
+
+  bool get isSmallLaptop =>
+      width > DeviceType.ipad.getMaxWidth() && width <= DeviceType.smallScreenLaptop.getMaxWidth();
+
+  bool get isDesktop => width > DeviceType.smallScreenLaptop.getMaxWidth();
 }
 
 extension DeviceTypeExtension on DeviceType {

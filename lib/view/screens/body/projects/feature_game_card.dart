@@ -131,12 +131,20 @@ class FeaturedGameCard extends StatelessWidget {
                     width: double.infinity,
                     child: ElevatedButton.icon(
                       onPressed: () {
-                        context.goNamed(
-                          AppRouteName.game,
-                          pathParameters: {
-                            'title': featuredGame.slug,
-                          },
-                        );
+                        if (context.width < DeviceType.ipad.getMaxWidth()) {
+                          context.goNamed(
+                            AppRouteName.webFrame,
+                            pathParameters: {'title': featuredGame.slug},
+                            extra: featuredGame.gameUrl,
+                          );
+                        } else {
+                          context.goNamed(
+                            AppRouteName.game,
+                            pathParameters: {
+                              'title': featuredGame.slug,
+                            },
+                          );
+                        }
                       },
                       icon: const Icon(Icons.play_arrow, size: 20),
                       label: const Text('Play Now'),
