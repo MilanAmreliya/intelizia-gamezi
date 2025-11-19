@@ -310,7 +310,7 @@ class _Body extends StatelessWidget {
           adFormat: 'fluid',
           adLayout: 'in-article',
           maxWidth: 970,
-          minHeight: 200,
+          height: 200,
         ),
       ),
     );

@@ -104,7 +104,7 @@ class ExploreGameScreen extends StatelessWidget {
                                               adSlot: AdsenseAdUnitId.multiplexSlotVertical,
                                               adFormat: 'autorelaxed',
                                               maxWidth: 970,
-                                              minHeight: 600,
+                                              height: 600,
                                             ),
                                           );
                                         } else {
@@ -114,7 +114,7 @@ class ExploreGameScreen extends StatelessWidget {
                                               adSlot: AdsenseAdUnitId.multiplexSlot,
                                               adFormat: 'autorelaxed',
                                               maxWidth: 970,
-                                              minHeight: 250,
+                                              height: 250,
                                             ),
                                           );
                                         }

@@ -94,7 +94,8 @@ class _ProjectsGridState extends State<ProjectsGrid> {
           itemCount: itemCount,
           itemBuilder: (_, index) {
             if (context.isMobile && adIndices.contains(index)) {
-              return Center(
+              return Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 20),
                 child: SizedBox(
                   width: 970,
                   child: FixedAdsenseBanner(
@@ -102,7 +103,7 @@ class _ProjectsGridState extends State<ProjectsGrid> {
                     adFormat: 'fluid',
                     adLayoutKey: AdsenseAdUnitId.inFeedLayoutKey,
                     maxWidth: 970,
-                    minHeight: 160,
+                    height: 200,
                   ),
                 ),
               );

@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:gamezi/services/ad_services/ad_sense_auto_banner.dart';
 import 'package:gamezi/utils/app_extensions.dart';
-import 'package:gamezi/view/screens/body/intro/ad_banner.dart';
 
 import '../../utils/app_enums.dart';
 
@@ -38,7 +37,8 @@ class SideAdBanner extends StatelessWidget {
           child: FixedAdsenseBanner(
             adSlot: AdsenseAdUnitId.displaySlot,
             maxWidth: 970,
-            minHeight: height,
+            height: height,
+            adFormat: "auto",
           ),
         ),
       ),

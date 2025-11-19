@@ -4,6 +4,7 @@ import 'package:gamezi/config/seo.dart';
 import 'package:gamezi/services/ad_services/ad_sense_auto_banner.dart';
 import 'package:gamezi/utils/app_enums.dart';
 import 'package:gamezi/view/screens/body/about_our_work/about_our_work_widget.dart';
+import 'package:gamezi/view/widgets/side_ad_banner.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../utils/app_extensions.dart';
@@ -257,7 +258,8 @@ class _HomeBodyState extends State<HomeBody> {
                           child: FixedAdsenseBanner(
                             adSlot: AdsenseAdUnitId.displaySlot,
                             maxWidth: 970,
-                            minHeight: 90,
+                            height: 250,
+                            adFormat: "auto",
                           ),
                         ),
                         SizedBox(
@@ -272,7 +274,8 @@ class _HomeBodyState extends State<HomeBody> {
                             child: FixedAdsenseBanner(
                               adSlot: AdsenseAdUnitId.displaySlot,
                               maxWidth: 970,
-                              minHeight: 90,
+                              height: 250,
+                              adFormat: "auto",
                             ),
                           ),
                           SizedBox(
@@ -291,6 +294,16 @@ class _HomeBodyState extends State<HomeBody> {
               ],
             ),
             const VerticalHeadersBuilder(),
+            const SideAdBanner(
+              alignment: Alignment.topRight,
+              padding: EdgeInsets.only(top: 40, right: 20),
+              testMode: true,
+            ),
+            const SideAdBanner(
+              alignment: Alignment.topLeft,
+              padding: EdgeInsets.only(top: 40, right: 20),
+              testMode: true,
+            ),
           ],
         ),
       ),
