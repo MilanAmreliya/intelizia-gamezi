@@ -88,4 +88,10 @@ abstract class MyImages {
   static const survivorHalf = '$_basePath/survivor_half.png';
   static const theHouseFull = '$_basePath/the_house_full.png';
   static const theHouseHalf = '$_basePath/the_house_half.png';
+  static const memoryCardHalf = '$_basePath/memory_card_half.png';
+  static const memoryCardFull = '$_basePath/memory_card_full.png';
+  static const archeryFull = '$_basePath/archery_full.png';
+  static const archeryHalf = '$_basePath/archery_half.png';
+  static const tiltingHalf = '$_basePath/tilting_full.png';
+  static const tiltingFull = '$_basePath/tilting_half.png';
 }

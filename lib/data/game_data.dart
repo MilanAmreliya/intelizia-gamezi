@@ -4,7 +4,7 @@ List<Map<String, dynamic>> gameData = [
   {
     "title": "Alien Invasion",
     "slug": "alien-invasion",
-    "gameUrl": "https://cykod.github.io/AlienInvasion/",
+    "gameUrl": "https://aloca-flutter.netlify.app/games/alien_invansion/index.html",
     "fullGameUrl": MyImages.alienFull,
     "halfGameUrl": MyImages.alienHalf,
     "imageUrl": "https://raw.githubusercontent.com/cykod/AlienInvasion/master/images/sprites.png",
@@ -63,7 +63,7 @@ List<Map<String, dynamic>> gameData = [
   {
     "title": "Clumsy Bird",
     "slug": "clumsy-bird",
-    "gameUrl": "https://aloca-flutter.netlify.app/clumsy-bird/index.html",
+    "gameUrl": "https://aloca-flutter.netlify.app/games/clumsy-bird/index.html",
     "fullGameUrl": MyImages.birdFull,
     "halfGameUrl": MyImages.birdHalf,
     "imageUrl": "https://ellisonleao.github.io/clumsy-bird/favicon.ico",
@@ -128,9 +128,196 @@ This version is ideal for players who want a lightweight, mobile-friendly arcade
     ]
   },
   {
+    "title": "Archery",
+    "slug": "archery",
+    "gameUrl": "https://aloca-flutter.netlify.app/games/archery/index.html",
+    "fullGameUrl": MyImages.archeryFull,
+    "halfGameUrl": MyImages.archeryHalf,
+    "imageUrl": "https://i.ibb.co/M6KTWnf/pic.jpg",
+    "description":
+        "Pull back a bow, find your angle, and release arrows toward a shifting bullseye in a clean SVG archery range.",
+    "longDescription":
+        "Archery is a simple browser skill game built with SVG and GSAP where every shot is about feel and timing. You click and drag near the bow to pull the string back, watching the arrow bend and the aim arc curve across the sky. A small amount of random sway is added to each draw so no two shots are exactly the same, which forces you to learn the motion instead of memorizing one perfect angle.\n\nThe target sits at the far end of the range with clear rings and a bright bullseye, and hits are judged by where your arrow line cuts through the scoring band. Because the presentation is minimal and everything runs in the browser, it works well as a short-focus aim trainer, a casual dexterity break, or a quick game to show off smooth vector animation without heavy assets or loading time.",
+    "about":
+        "A lightweight archery demo that uses SVG paths, GSAP tweens, and simple hit detection to create satisfying one-shot challenges in the browser.",
+    "aboutThisGame": {
+      "genre": "Aim-and-shoot arcade",
+      "sessionLength":
+          "Individual shots last seconds; a full streak of attempts fits into a 2–5 minute break.",
+      "coreSkills": [
+        "Reading angles and distances quickly",
+        "Fine mouse control while drawing and releasing",
+        "Adapting to slight variance in each shot"
+      ],
+      "bestFor": [
+        "Players who enjoy short, precision-based challenges",
+        "People wanting a quick browser-friendly aim warm-up",
+        "Anyone curious about SVG and tweened animation in games"
+      ],
+      "monetization": "Free to play in the browser, no logins or purchases."
+    },
+    "features": [
+      "SVG-based bow, arrow, and target with clean lines and readable feedback",
+      "Smooth pull-back and release animation powered by GSAP tweens",
+      "Subtle random offset on each draw so shots stay interesting",
+      "Immediate restart loop ideal for quick high-score or “just one more” sessions"
+    ],
+    "howToPlayQuick": {
+      "desktop":
+          "Click and hold near the bow, drag to pull the string back and adjust your aim, then release to fire at the target.",
+      "mobile":
+          "Best on devices with a mouse or trackpad; some mobile browsers emulate clicks, but precise aiming works best on desktop.",
+      "goal":
+          "Land clean hits on the target rings and aim for bullseyes by finding a consistent draw length and release timing."
+    },
+    "proTips": [
+      "Watch the arc path as you pull back — it hints at where your arrow will travel.",
+      "Use shorter, controlled pulls until you learn how much power each distance adds.",
+      "Adjust your aim slightly before releasing to compensate for the random sway on each shot."
+    ],
+    "whyPeopleLoveIt": [
+      "Instant feedback after every shot with no menus or downtime.",
+      "Relaxing visuals that still reward careful aim and control.",
+      "Runs in a tab with almost no load time or configuration."
+    ],
+    "howToPlay": [
+      "Open the game and move your cursor near the bow on the left side of the range.",
+      "Click and drag to pull back the string, watching the arrow and aim arc adjust together.",
+      "Line up the arc so it passes cleanly through the center of the target.",
+      "Release the mouse to fire, then observe where the arrow lands and adjust your next shot."
+    ],
+    "tags": ["archery", "aim trainer", "browser", "svg", "gsap", "skill game"],
+    "platform": ["Web"]
+  },
+  {
+    "title": "Memory Card",
+    "slug": "memory-card",
+    "gameUrl": "https://aloca-flutter.netlify.app/games/memory_card/index.html",
+    "fullGameUrl": MyImages.memoryCardFull,
+    "halfGameUrl": MyImages.memoryCardHalf,
+    "imageUrl": "https://i.ibb.co/M6KTWnf/pic.jpg",
+    "description":
+        "Flip over cards, remember icons, and clear the board by matching all pairs in this quick memory puzzle.",
+    "longDescription":
+        "Memory Card is a classic concentration game that runs entirely in the browser. A grid of facedown cards hides simple, colorful icons underneath; your job is to flip two at a time and remember where each symbol lives. When you reveal a matching pair, they stay face up. Miss a match and both cards shake briefly before flipping back, forcing you to rely on recall instead of luck.\n\nBecause the deck is small and reshuffled each round, games stay short and replayable. The layout is clean, the animations are snappy, and everything responds to clicks or taps, making it a good fit for quick mental warmups, casual play, or light brain training between tasks.",
+    "about":
+        "A straightforward browser memory game built with HTML, CSS, and JavaScript. It focuses on responsive card flips and simple, readable icons instead of heavy effects.",
+    "aboutThisGame": {
+      "genre": "Memory / concentration puzzle",
+      "sessionLength":
+          "Most boards take 1–3 minutes depending on how carefully you track flipped cards.",
+      "coreSkills": [
+        "Short-term visual memory",
+        "Pattern and position recognition",
+        "Focused attention over short rounds"
+      ],
+      "bestFor": [
+        "Players who enjoy quiet, low-stress puzzles",
+        "Short brain-training sessions during breaks",
+        "Casual play on phones, tablets, and desktops"
+      ],
+      "monetization":
+          "Completely free browser experience with no accounts, energy timers, or in-game purchases."
+    },
+    "features": [
+      "16-card grid that reshuffles icons every round for fresh layouts",
+      "Smooth flip and shake animations when you miss a match",
+      "Automatic reset once all pairs are found so you can instantly replay",
+      "Simple art that stays readable on small or large screens"
+    ],
+    "howToPlayQuick": {
+      "desktop":
+          "Click any card to flip it, then click a second card to try and find its matching icon.",
+      "mobile":
+          "Tap cards to reveal them two at a time; matched pairs stay open while mismatches flip back.",
+      "goal":
+          "Clear the entire grid by remembering each icon’s position and matching every pair with as few mistakes as possible."
+    },
+    "proTips": [
+      "Scan the grid in a consistent pattern so you know where you have already looked.",
+      "When you miss a pair, mentally group both positions together to catch them on the next pass.",
+      "Try to remember not just the icons but their rough row and column to speed up matching."
+    ],
+    "whyPeopleLoveIt": [
+      "Easy to understand in seconds with no tutorial required.",
+      "Short, repeatable rounds that feel satisfying to clear.",
+      "Works well on touch devices and desktops alike."
+    ],
+    "howToPlay": [
+      "Press play and watch the grid of facedown cards appear.",
+      "Flip two cards at a time to reveal the icons underneath.",
+      "If they match, leave them open; if not, note their positions before they flip back.",
+      "Continue flipping and remembering until every pair on the board has been matched."
+    ],
+    "tags": ["memory game", "matching", "puzzle", "browser", "casual", "brain training"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Tilting Maze",
+    "slug": "tilting-maze",
+    "gameUrl": "https://aloca-flutter.netlify.app/games/tilting_maze/index.html",
+    "fullGameUrl": MyImages.tiltingFull,
+    "halfGameUrl": MyImages.tiltingHalf,
+    "imageUrl": "https://i.ibb.co/M6KTWnf/pic.jpg",
+    "description":
+        "Tilt a grid-like maze, roll marbles around walls and holes, and guide every ball safely to the center.",
+    "longDescription":
+        "Tilting Maze is a physics-inspired browser puzzle where you do not move the balls directly — you tilt the whole board. A joystick on the side controls the maze’s angle: as you drag it, the grid leans and gravity-like acceleration nudges each ball through corridors, around walls, and toward the center goal. The layout is built from simple wall segments and nodes, but the interplay of momentum, friction, and tight passages quickly turns casual runs into thoughtful navigation challenges.\n\nThe game supports two modes. In the default mode you focus on shepherding all the balls into the middle without letting them drift off course. In hard mode, black-hole tiles appear at specific coordinates, turning even small mistakes into instant failures. Combined with clear instructions and a compact play area, it makes for a great balance between toy-like fiddling and deliberate path planning.",
+    "about":
+        "A JavaScript maze toy that combines grid-based walls, basic physics, and joystick-style controls to create a tilting-board puzzle you can play in the browser.",
+    "aboutThisGame": {
+      "genre": "Physics maze / tilt puzzle",
+      "sessionLength":
+          "Typical sessions last 3–8 minutes as you experiment with routes or push for hard-mode clears.",
+      "coreSkills": [
+        "Fine control of virtual tilt and acceleration",
+        "Reading wall layouts and safe corridors",
+        "Planning routes that move multiple balls at once"
+      ],
+      "bestFor": [
+        "Players who like marble-tilt toys and physics puzzles",
+        "People who enjoy experimenting with different paths and angles",
+        "Desktop users who want a quick, interactive browser toy"
+      ],
+      "monetization": "Runs entirely in the browser with no ads, purchases, or sign-ups."
+    },
+    "features": [
+      "Grid-based maze built from reusable wall segments and nodes",
+      "Joystick control that tilts the entire board instead of individual pieces",
+      "Multiple balls to manage at once, creating satisfying chain movements",
+      "Optional hard mode with black holes that punish sloppy routes"
+    ],
+    "howToPlayQuick": {
+      "desktop":
+          "Click the joystick, drag to tilt the maze in different directions, and gently roll balls toward the center goal.",
+      "mobile":
+          "Best on desktop or laptops; touch input can emulate the joystick but precision is highest with mouse or trackpad.",
+      "goal":
+          "Guide every ball into the central area while avoiding dead ends and, in hard mode, the black-hole tiles."
+    },
+    "proTips": [
+      "Use small joystick movements instead of hard tilts to keep balls controllable.",
+      "Plan routes so balls do not crowd narrow corridors and block each other.",
+      "In hard mode, memorize black-hole locations and route around them before you build speed."
+    ],
+    "whyPeopleLoveIt": [
+      "Captures the feel of a physical tilting maze in a clean, browser-based layout.",
+      "Watching multiple balls roll and settle as the board moves is surprisingly satisfying.",
+      "Hard mode offers extra challenge without changing the simple controls."
+    ],
+    "howToPlay": [
+      "Click the joystick to start and watch the instruction note fade out.",
+      "Tilt the maze slowly at first and observe how balls slide along walls and corners.",
+      "Experiment with different angles to thread balls through corridors into the center.",
+      "Switch between easy and hard modes with keyboard shortcuts when you want more pressure from black holes."
+    ],
+    "tags": ["maze", "physics", "tilt control", "browser", "puzzle", "joystick"],
+    "platform": ["Web"]
+  },
+  {
     "title": "Custom Tetris",
     "slug": "custom-tetris",
-    "gameUrl": "https://ondras.github.io/custom-tetris/",
+    "gameUrl": "https://aloca-flutter.netlify.app/games/custom_tetris/index.html",
     "fullGameUrl": MyImages.customTetrisFull,
     "halfGameUrl": MyImages.customTetrisHalf,
     "imageUrl": "https://raw.githubusercontent.com/ondras/custom-tetris/master/screenshot.png",
@@ -191,7 +378,7 @@ This version is ideal for players who want a lightweight, mobile-friendly arcade
   {
     "title": "0h h1",
     "slug": "0h-h1",
-    "gameUrl": "https://0hh1.com/",
+    "gameUrl": "https://aloca-flutter.netlify.app/games/ohh1/index.html",
     "fullGameUrl": MyImages.ohH1Full,
     "halfGameUrl": MyImages.ohH1Half,
     "imageUrl": "https://0hh1.com/icon-192.png",
@@ -275,7 +462,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "0h n0",
     "slug": "0h-n0",
-    "gameUrl": "https://0hn0.com/",
+    "gameUrl": "https://aloca-flutter.netlify.app/games/ohh0/index.html",
     "fullGameUrl": MyImages.ohNoFull,
     "halfGameUrl": MyImages.ohNoHalf,
     "imageUrl": "https://0hn0.com/icon-192.png",
@@ -347,7 +534,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Infectors",
     "slug": "infectors",
-    "gameUrl": "https://satanas.github.io/infectors/",
+    "gameUrl": "https://aloca-flutter.netlify.app/games/infectors/index.html",
     "fullGameUrl": MyImages.infectorsFull,
     "halfGameUrl": MyImages.infectors,
     "imageUrl": "https://raw.githubusercontent.com/satanas/infectors/master/ss1.png",
@@ -405,7 +592,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Slow Roads",
     "slug": "slow-roads",
-    "gameUrl": "https://slowroads.io/",
+    "gameUrl": "https://aloca-flutter.netlify.app/games/slow_road/index.html",
     "fullGameUrl": MyImages.carRacingFull,
     "halfGameUrl": MyImages.carRacingHalf,
     "imageUrl": "https://slowroads.io/favicon.ico",
@@ -478,7 +665,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "N-GON",
     "slug": "n-gon",
-    "gameUrl": "https://landgreen.github.io/n-gon/",
+    "gameUrl": "https://aloca-flutter.netlify.app/games/n_gon/index.html",
     "fullGameUrl": MyImages.robotFull,
     "halfGameUrl": MyImages.robotHalf,
     "imageUrl": "https://www.google.com/s2/favicons?sz=256&domain=landgreen.github.io",
@@ -550,7 +737,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Hextris",
     "slug": "hextris",
-    "gameUrl": "https://hextris.github.io/hextris/",
+    "gameUrl": "https://aloca-flutter.netlify.app/games/hextrics/index.html",
     "fullGameUrl": MyImages.hextrisFull,
     "halfGameUrl": MyImages.hextris,
     "imageUrl": "https://github.com/Hextris/hextris/raw/gh-pages/images/twitter-opengraph.png",
