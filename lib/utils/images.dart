@@ -94,4 +94,22 @@ abstract class MyImages {
   static const archeryHalf = '$_basePath/archery_half.png';
   static const tiltingHalf = '$_basePath/tilting_full.png';
   static const tiltingFull = '$_basePath/tilting_half.png';
+
+  static const crossyRoadFull = '$_basePath/crossy_road_full.png';
+  static const crossyRoadHalf = '$_basePath/crossy_road_half.png';
+  static const simonSaysFull = '$_basePath/simon_say_game_full.png';
+  static const simonSaysHalf = '$_basePath/simon_say_game_half.png';
+  static const towerBlockFull = '$_basePath/tower_block_full.png';
+  static const towerBlockHalf = '$_basePath/tower_block_half.png';
+  static const whackAMoleFull = '$_basePath/what_a_mole_full.png';
+  static const whackAMoleHalf = '$_basePath/what_a_mole_half.png';
+
+  static const candyCrushFull = '$_basePath/candy_crush_full.png';
+  static const candyCrushHalf = '$_basePath/candy_crush_half.png';
+  static const fallingBallFull = '$_basePath/falling_ball_full.png';
+  static const fallingBallHalf = '$_basePath/falling_ball_half.png';
+  static const grayBallFull = '$_basePath/gray_ball_full.png';
+  static const grayBallHalf = '$_basePath/gray_ball_half.png';
+  static const catCatchFull = '$_basePath/cat_full.png';
+  static const catCatchHalf = '$_basePath/cat_half.png';
 }

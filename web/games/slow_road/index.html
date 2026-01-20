@@ -66,6 +66,24 @@
         }
 
         /* ===============================
+           REMOVE SPECIFIC BUTTONS (USER REQUEST)
+        ================================ */
+        /* Donate Button */
+        a[href*="ko-fi"],
+        #donate,
+        #donate-please {
+            display: none !important;
+        }
+
+        /* Feedback Button */
+        .menu-item:has(img[src*="feedback2"]),
+        img[src*="feedback2"],
+        .feedback-main,
+        #splash-feedback-prompt {
+            display: none !important;
+        }
+
+        /* ===============================
            REMOVE FIXED OVERLAYS
         ================================ */
         body > div:not(#root) {

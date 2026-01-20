@@ -1,0 +1,205 @@
+.container-fluid {
+    padding: 0;
+
+}
+
+body {
+    background-color: #346960;
+    background-image: url("./assets/images/skulls.png");
+    padding: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.top-dash {
+    display: inline-block;
+    margin: 0 auto;
+    height: 50px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
+    border-bottom: 0px;
+    border-radius: 100px 100px 0 0;
+    cursor: pointer;
+    transition-duration: 100ms;
+    -moz-transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+}
+
+.top-dash>h3 {
+    color: white;
+    font-family: "Righteous", cursive;
+    margin: 0 auto;
+    padding: 5px 0 5px 0;
+}
+
+.top-dash:hover {
+    width: 175px;
+    border-radius: 100px 100px 0 0;
+    background-color: rgba(53, 52, 52, 0.8);
+    transition-duration: 100ms;
+    -moz-transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+}
+
+
+#canvas {
+    /* max-height: 600px;
+    max-width: 800px; */
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    width: 100%;
+    height: 600px;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgb(28, 79, 88) 100%);
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+h1 {
+    font-family: "Monoton", cursive;
+    color: white;
+}
+
+#logo {
+    padding: 5px 0px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.footer {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 15px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.opaque-info-box {
+    display: inline-block;
+    /* margin: 0 auto; */
+    width: 60%;
+    border: 2px solid aliceblue;
+    border-radius: 25px;
+    background-color: aliceblue;
+    font-family: "Righteous", cursive;
+    color: white;
+    background-color: #040f12;
+    background-image: url("./assets/images/subtle-white-feathers.png");
+}
+
+.modal-title {
+    color: black;
+    font-family: "Turret Road", cursive;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width:320px) {
+
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    #canvas {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (min-width:480px) {
+
+    /* smartphones, Android phones, landscape iPhone */
+    #canvas {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (min-width:600px) {
+
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    #canvas {
+        width: 500px;
+        height: 375px;
+    }
+}
+
+@media (min-width:830px) {
+
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    #canvas {
+        width: 800px;
+        height: 600px;
+    }
+}
+
+.canvas-wrap{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Make canvas responsive, keep 4:3 ratio */
+#canvas{
+  width: min(94vw, 800px);
+  height: auto;
+  aspect-ratio: 4 / 3;
+
+  /* IMPORTANT for mobile input */
+  touch-action: none;         /* prevents scroll/zoom gestures on canvas */
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Small overlay hint */
+.mobile-hint{
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-family: "Righteous", cursive;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+/* Sticky mobile buttons */
+.mobile-controls{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  gap: 10px;
+  padding: 10px;
+  background: rgba(0,0,0,0.75);
+  z-index: 9999;
+}
+
+.mobile-btn{
+  flex: 1;
+  height: 52px;
+  border-radius: 14px;
+  border: 2px solid #fff;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-family: "Righteous", cursive;
+  font-size: 16px;
+}
+
+/* give space so fixed bar doesn't cover content */
+@media (max-width: 575px){
+  body{ padding-bottom: 80px; }
+  .opaque-info-box{ width: 92%; }
+}

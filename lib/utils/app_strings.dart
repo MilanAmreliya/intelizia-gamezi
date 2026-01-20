@@ -21,7 +21,9 @@ Every game is checked for smooth controls, clear UI, and fair challenge so you c
 You can pick something short for a quick break or stay with a deeper challenge that rewards focus. Most games handle progress inside the game itself, so you can return later without creating an account. We also rotate in new titles and update existing ones based on player feedback, so you keep seeing active, well-maintained games instead of the same recycled list.""";
   static const String contactMsg =
       "Questions, feedback, or partnership ideas?\nSend a message to inteliziainfoway@gmail.com and we’ll get back to you. We’re happy to talk about collaborations, new game ideas, or anything you’d like to see next.";
-  static const String contactWithMe = 'Get in touch';
+
+  // static const String contactWithMe = 'Get in touch';
+  static const String contactWithMe = 'Contact support';
   static const String fasterTitle =
       "Play quality browser games instantly — fast loads, smooth play, and challenges powered by real skill.";
   static const String fasterSubTitle =

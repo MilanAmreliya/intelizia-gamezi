@@ -70,7 +70,7 @@ class _NotFound extends StatelessWidget {
 final analytics = FirebaseAnalytics.instance;
 
 final GoRouter router = GoRouter(
-  initialLocation: AppRoutePath.home,
+  initialLocation: AppRoutePath.exploreGames,
   debugLogDiagnostics: true,
   observers: [AnalyticsRouteObserver(analytics)],
   errorBuilder: (context, state) => const _NotFound(),
@@ -79,12 +79,14 @@ final GoRouter router = GoRouter(
       name: AppRouteName.root,
       path: AppRoutePath.home,
       pageBuilder: (context, state) {
-        return NoTransitionPage(
-          child: BlocProvider<HomeBloc>(
-            create: (_) => HomeBloc(),
-            child: const HomeView(),
-          ),
-        );
+        return NoTransitionPage(child: const ExploreGameScreen());
+
+        // return NoTransitionPage(
+        //   child: BlocProvider<HomeBloc>(
+        //     create: (_) => HomeBloc(),
+        //     child: const HomeView(),
+        //   ),
+        // );
       },
     ),
     GoRoute(

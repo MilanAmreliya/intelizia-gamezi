@@ -4,6 +4,7 @@ import 'package:gamezi/route/router.dart';
 import 'package:gamezi/services/ad_services/ad_sense_auto_banner.dart';
 import 'package:gamezi/utils/app_extensions.dart';
 import 'package:gamezi/utils/colors.dart';
+import 'package:gamezi/view/screens/body/contact/contact_section.dart';
 import 'package:gamezi/view/screens/body/intro/ad_banner.dart';
 
 import 'package:gamezi/view/widgets/game_grid.dart';
@@ -119,6 +120,13 @@ class ExploreGameScreen extends StatelessWidget {
                                           );
                                         }
                                       },
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: ContactSection(),
+                                    ),
+                                    SizedBox(
+                                      height: 20,
                                     )
                                   ],
                                 ),

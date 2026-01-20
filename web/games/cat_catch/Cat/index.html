@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Kawaii Cat Game</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overscroll-behavior: none;
+            touch-action: none;
+            font-family: 'Comic Sans MS', Arial, sans-serif;
+            background-color: #fce4ec;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        canvas {
+            display: none;
+            background-color: #e1f5fe;
+            border: 4px solid #ff80ab;
+            border-radius: 16px;
+        }
+
+        #introScreen,
+        #gameOverMessage {
+            position: absolute;
+            text-align: center;
+            background-color: #fff0f5;
+            padding: 30px;
+            border-radius: 20px;
+            border: 4px solid #ff80ab;
+            box-shadow: 0 0 20px rgba(255, 128, 171, 0.5);
+            color: #ff4081;
+        }
+
+        #introScreen h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .menuButton {
+            padding: 12px 26px;
+            margin: 10px;
+            background-color: #ff80ab;
+            color: white;
+            border: none;
+            font-size: 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(255, 128, 171, 0.5);
+        }
+
+        #gameStatus {
+            position: absolute;
+            top: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 26px;
+            font-weight: bold;
+            color: #ff4081;
+            display: none;
+            z-index: 5;
+        }
+
+        #pauseButton {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            padding: 8px 16px;
+            background-color: #ff80ab;
+            color: white;
+            border: none;
+            font-size: 14px;
+            border-radius: 20px;
+            display: none;
+            z-index: 5;
+        }
+
+        /* ALWAYS VISIBLE CONTROLS */
+        #controlsWrapper {
+            position: fixed;
+            bottom: 16px;
+            width: 100%;
+            display: none;
+            justify-content: center;
+            gap: 40px;
+            z-index: 10;
+            pointer-events: auto;
+        }
+
+        .controlBtn {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            font-size: 32px;
+            background-color: #ff80ab;
+            color: white;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 6px 10px rgba(255, 128, 171, 0.6);
+        }
+
+        .controlBtn:active {
+            background-color: #ff4081;
+            transform: scale(0.95);
+        }
+
+        #gameOverMessage {
+            display: none;
+            z-index: 20;
+        }
+
+        @media (max-height: 600px) {
+            .controlBtn {
+                width: 64px;
+                height: 64px;
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="introScreen">
+    <h1>Kawaii Cat Game</h1>
+    <button class="menuButton" id="newGameButton">New Game</button>
+    <button class="menuButton" id="difficultyButton">Difficulty</button>
+    <button class="menuButton" id="highScoresButton">High Scores</button>
+</div>
+
+<canvas id="gameCanvas"></canvas>
+
+<div id="gameStatus">Score: 0</div>
+<button id="pauseButton">Pause</button>
+
+<!-- ALWAYS VISIBLE CONTROLS -->
+<div id="controlsWrapper">
+    <button class="controlBtn" id="leftBtn">◀</button>
+    <button class="controlBtn" id="rightBtn">▶</button>
+</div>
+
+<div id="gameOverMessage">
+    <p>Game Over! Your score: <span id="finalScore">0</span></p>
+    <button class="menuButton" id="retryButton">Try Again</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
