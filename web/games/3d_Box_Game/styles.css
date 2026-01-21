@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Kalam&display=swap");
+
+body {
+  margin: 0;
+  overflow: hidden;
+  touch-action: none; /* IMPORTANT: prevents scroll while swiping joystick */
+  -webkit-user-select: none;
+  user-select: none;
+
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-image: linear-gradient(6deg, #ffffff 0%, #6284ff 50%, #ff0000 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Home icon fixed */
+.home-link{
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  font-size: 28px;
+  z-index: 200;
+  text-decoration: none;
+}
+.home-link i { color: #000; }
+
+/* Heading */
+h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  margin: 0;
+}
+
+/* Score */
+#score-container {
+  position: fixed;
+  top: 60px;
+  right: 16px;
+  color: white;
+  font-size: clamp(16px, 2.3vw, 24px);
+  text-align: right;
+  z-index: 150;
+}
+
+/* Reset button */
+.overlay {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  z-index: 200;
+}
+#reset-button {
+  padding: 14px 18px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  background-color: rgba(80, 80, 80, 0.85);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.25);
+  cursor: pointer;
+}
+
+/* GAME OVER */
+.gameover {
+  color: black;
+  font-size: clamp(2rem, 5vw, 3rem);
+  position: fixed;
+  top: 120px;
+  width: 100%;
+  text-align: center;
+  z-index: 210;
+  margin: 0;
+}
+
+/* Mobile UI */
+.mobile-ui { display: none; }
+
+.joystick{
+  pointer-events: auto;
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.25);
+  backdrop-filter: blur(6px);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+}
+
+.stick{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 56px;
+  height: 56px;
+  margin-left: -28px;
+  margin-top: -28px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.30);
+  transition: transform 0.02s linear;
+}
+
+.jump{
+  pointer-events: auto;
+  position: fixed;
+  right: 18px;
+  bottom: 32px;
+  width: 74px;
+  height: 74px;
+  border-radius: 18px;
+  font-size: 28px;
+  color: #fff;
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.25);
+  backdrop-filter: blur(6px);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Desktop: hide mobile ui; Mobile: show */
+@media (max-width: 900px), (pointer: coarse) {
+  .mobile-ui { display: block; }
+}

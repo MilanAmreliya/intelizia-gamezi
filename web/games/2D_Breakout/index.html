@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>2D Breakout Game</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Germania+One"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+<a class="home-link" href="https://kunjgit.github.io/GameZone/" aria-label="Home">
+    <i class="fas fa-home"></i>
+</a>
+
+<div class="game-card" id="gameCard">
+    <div class="sound">
+        <img src="img/SOUND_ON.png" alt="sound-on" id="sound"/>
+    </div>
+
+    <div id="gameover">
+        <img src="img/youwon.png" alt="youwon" id="youwon"/>
+        <img src="img/gameover.png" alt="gameover" id="youlose"/>
+        <div id="restart">Play Again!</div>
+    </div>
+
+    <canvas id="breakout"></canvas>
+
+    <!-- Mobile Controls -->
+    <div class="mobile-controls" id="mobileControls" aria-hidden="true">
+        <button class="ctrl left" id="btnLeft" aria-label="Move left">◀</button>
+        <button class="ctrl right" id="btnRight" aria-label="Move right">▶</button>
+    </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>

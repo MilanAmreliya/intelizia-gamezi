@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Press Start 2P', Courier, monospace;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #efede9;
+  overflow: hidden;
+  padding: 12px;
+}
+
+.home-wrapper {
+  width: 100%;
+  text-align: center;
+  font-size: clamp(20px, 4vw, 30px);
+}
+
+.home-icon {
+  color: #374259;
+}
+
+h1 {
+  color: #374259;
+  font-family: 'Press Start 2P', cursive;
+  font-size: clamp(14px, 3.5vw, 28px);
+  margin: 12px 0;
+}
+
+.game-container {
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 5 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#board {
+  width: 100%;
+  height: 100%;
+  background-color: #efede9;
+  border-top: 3px solid #374259;
+  border-bottom: 3px solid #374259;
+}
