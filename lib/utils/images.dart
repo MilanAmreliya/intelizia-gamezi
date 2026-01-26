@@ -94,7 +94,7 @@ abstract class MyImages {
   static const tiltingFull = '$_basePath/tilting_half.png';
 
   static const crossyRoadFull = '$_basePath/crossy_road_full.png';
-  static const crossyRoadHalf = '$_basePath/crossy_road_half.png';
+  static const crossyRoadHalf = '$_basePath/crossy_rorad_full.png';
   static const simonSaysFull = '$_basePath/simon_say_game_full.png';
   static const simonSaysHalf = '$_basePath/simon_say_game_half.png';
   static const towerBlockFull = '$_basePath/tower_block_full.png';
@@ -172,4 +172,7 @@ abstract class MyImages {
   static const racerHalf = '$_basePath/racer_half.png';
   static const connect3Full = '$_basePath/connect_3_full.png';
   static const connect3Half = '$_basePath/connect_3_half.png';
+
+  static const underrunFull = '$_basePath/underrun_full.png';
+  static const underrunHalf = '$_basePath/underrun_half.png';
 }

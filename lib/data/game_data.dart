@@ -4,7 +4,7 @@ List<Map<String, dynamic>> gameData = [
   {
     "title": "Alien Invasion",
     "slug": "alien-invasion",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/alien_invansion/index.html",
+    "gameUrl": "https://intelizia.com/games/alien_invansion/index.html",
     "fullGameUrl": MyImages.alienInvansionFull,
     "halfGameUrl": MyImages.alienInvansionHalf,
     "imageUrl": "https://raw.githubusercontent.com/cykod/AlienInvasion/master/images/sprites.png",
@@ -61,137 +61,9 @@ List<Map<String, dynamic>> gameData = [
     "platform": ["Web", "Mobile"]
   },
   {
-    "title": "Clumsy Bird",
-    "slug": "clumsy-bird",
-    "gameUrl": "https://aloca-flutter.netlify.app/clumsy-bird/index.html",
-    "fullGameUrl": MyImages.birdFull,
-    "halfGameUrl": MyImages.birdHalf,
-    "imageUrl": "https://ellisonleao.github.io/clumsy-bird/favicon.ico",
-    "description":
-        "Tap to keep a clumsy bird aloft and glide through tight gaps in this fast, skill-based browser arcade.",
-    "longDescription":
-        """Clumsy Bird is a simple, timing-first flying game you can open in any modern browser and start playing right away. Your only job is to tap and give the bird just enough lift to slip between wooden pylons without touching them. Miss the rhythm and gravity wins; tap too hard and you bonk the ceiling. Because the physics stay predictable, every run feels fair and every mistake is learnable.
-There are no upgrades, coins, or energy bars here. It is a pure high-score loop made for short breaks, warm-ups, or testing your reflexes before you jump into heavier games. Restarts are instant, so it is easy to chase "one more try" over and over.
-This version is ideal for players who want a lightweight, mobile-friendly arcade challenge that still rewards precision and focus. It works on desktop with a mouse click or spacebar too, so it is a good skill trainer for anyone who likes tap-to-fly, physics-based browser games, and small competitive challenges.""",
-    "about":
-        "Clumsy Bird is a community-made, tap-to-fly arcade project you can play for free in the browser. It is inspired by classic obstacle runners but released as an open, non-commercial experience with clean, skill-first gameplay.",
-    "aboutThisGame": {
-      "genre": "Tap-to-fly arcade / timing-based obstacle runner",
-      "sessionLength":
-          "Most runs last 10–60 seconds, and you can instantly restart to chase a better score.",
-      "coreSkills": [
-        "Rhythmic tap control to counter gravity",
-        "Reading gaps early and choosing a safe flight line",
-        "Fine micro-adjustments for tight obstacle spacing"
-      ],
-      "bestFor": [
-        "Players who enjoy short, replayable browser games",
-        "Mobile users who want no-download arcade challenges",
-        "People practicing reaction time and steady hand control"
-      ],
-      "monetization":
-          "Play-only experience — no shop, no pay-to-win boosts, no account requirement."
-    },
-    "features": [
-      "Instant browser play — crash, restart, and try again in seconds.",
-      "Predictable physics and readable obstacles so every failure makes sense.",
-      "Responsive controls on desktop (click/Space) and mobile (tap).",
-      "Score-focused design that rewards consistent rhythm over grinding items."
-    ],
-    "howToPlayQuick": {
-      "desktop":
-          "Press Space or left-click to flap in short bursts, keeping the bird aligned as each set of pylons approaches.",
-      "mobile":
-          "Tap the screen with a steady tempo — light taps lift a little, faster taps lift more, so aim to glide instead of bounce.",
-      "goal":
-          "Fly through as many gaps as possible in one continuous run and beat your previous distance score."
-    },
-    "proTips": [
-      "Think ahead — start your lift just before reaching a gap so you glide through instead of spiking upward late.",
-      "Use small recovery taps right after a climb to level out and avoid overcorrecting into the next obstacle.",
-      "If your finger gets tense, take one quick break — relaxed rhythm makes the bird easier to control."
-    ],
-    "whyPeopleLoveIt": [
-      "Zero setup: open the page and you are playing in under a second.",
-      "Progress feels earned because outcomes depend on timing, not unlocks or luck.",
-      "Short, focused attempts that fit between tasks, classes, or calls."
-    ],
-    "howToPlay": [
-      "Tap or click to flap upward; let gravity pull you down when you need to drop.",
-      "Watch the next obstacle, not just the bird — choosing your line early keeps movements smooth.",
-      "Maintain an even tap rhythm; irregular taps make the bird lurch and hit walls.",
-      "After a crash, restart right away and repeat the pattern that felt most controllable."
-    ],
-    "tags": ["arcade game", "tap-to-fly", "skill-based", "browser game", "open source"],
-    "platform": [
-      "Web",
-    ]
-  },
-  {
-    "title": "Custom Tetris",
-    "slug": "custom-tetris",
-    "gameUrl": "https://ondras.github.io/custom-tetris/",
-    "fullGameUrl": MyImages.customTetrisFull,
-    "halfGameUrl": MyImages.customTetrisHalf,
-    "imageUrl": "https://raw.githubusercontent.com/ondras/custom-tetris/master/screenshot.png",
-    "description":
-        "Modular Tetris where you choose pieces as attacker or place them as defender, with AI and optional networked play.",
-    "longDescription":
-        "Custom Tetris rethinks the classic falling-block puzzle by splitting the action into two roles. The defender plays standard Tetris—moving, rotating, and dropping pieces to clear lines and avoid topping out. The attacker chooses which pieces arrive next from a small stash; when the stash is spent, it fully refreshes. You can mix humans, AI, random selection, or networked opponents, and even switch roles during a match, which produces very different rhythms and strategies.\n\nCreated for GitHub Game Off 2013, it’s a lightweight web build in vanilla JavaScript. Network play uses a simple Firebase backend (you provide a database URL), so head-to-head experiments are easy to try. It’s a neat sandbox for testing balance ideas—how hard can you make life for the defender, and how well can a defender adapt under pressure?",
-    "about":
-        "Open-source browser game by Ondřej Žára, written in vanilla JS for GitHub Game Off 2013 and released under the BSD-3-Clause license.",
-    "aboutThisGame": {
-      "genre": "Falling-block puzzle",
-      "sessionLength": "Typical runs last 1–10 minutes depending on skill and role.",
-      "coreSkills": [
-        "Plan placements under pressure",
-        "Anticipate piece sequences",
-        "Adapt tactics when switching roles"
-      ],
-      "bestFor": [
-        "Fans of classic Tetris variants",
-        "Short coffee-break sessions",
-        "Experimenters who enjoy AI and multiplayer"
-      ],
-      "monetization": "Free, no IAP/ads."
-    },
-    "features": [
-      "Switchable roles: attacker (choose pieces) or defender (place pieces)",
-      "Human, AI, random, or networked combinations (up to 12 matchups)",
-      "Piece stash that refreshes when spent, shaping tempo and strategy",
-      "Simple, fast web build—keyboard and mouse friendly"
-    ],
-    "howToPlayQuick": {
-      "desktop":
-          "Use arrow keys to move, rotate, and drop; click pieces or press number keys when attacking.",
-      "mobile":
-          "Tap piece icons when attacking; defender controls require a hardware keyboard, so touch-only play is limited.",
-      "goal":
-          "Keep the stack below the top by clearing lines—or as attacker, choose pieces that overwhelm the defender."
-    },
-    "proTips": [
-      "As attacker, cycle the stash early by sending awkward shapes to set up tougher follow-ups.",
-      "Keep a flat surface and a clean well to preserve last-second rotation options.",
-      "Practice both roles to learn which shapes cause trouble and how to recover from them."
-    ],
-    "whyPeopleLoveIt": [
-      "A fresh twist where you influence which pieces appear, not just how to place them.",
-      "Quick sessions that work for solo practice or head-to-head experiments.",
-      "Lightweight web build that runs instantly in a browser."
-    ],
-    "howToPlay": [
-      "Choose the attacker (human, AI, random, or network) and the defender (human, AI, or network).",
-      "If attacking, click a piece or press its number to send it; the stash refills when it’s empty.",
-      "If defending, use the arrow keys to position, rotate, and drop pieces to clear lines.",
-      "Play until the stack tops out or you outlast the opponent; try network play with a Firebase URL."
-    ],
-    "tags": ["tetris", "falling blocks", "puzzle", "multiplayer", "ai", "browser", "open source"],
-    "platform": ["Web"]
-  },
-  {
     "title": "0h h1",
     "slug": "0h-h1",
-    "gameUrl": "https://0hh1.com/",
+    "gameUrl": "https://intelizia.com/games/ohh1/index.html",
     "fullGameUrl": MyImages.ohH1Full,
     "halfGameUrl": MyImages.ohH1Half,
     "imageUrl": "https://0hh1.com/icon-192.png",
@@ -273,9 +145,219 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
     ],
   },
   {
+    "title": "Crossy Road",
+    "slug": "crossy-road",
+    "gameUrl": "https://intelizia.com/games/crossy_road/index.html",
+    "fullGameUrl": MyImages.crossyRoadFull,
+    "halfGameUrl": MyImages.crossyRoadHalf,
+    "imageUrl": "https://intelizia.com/games/crossy_road/icon.png",
+    "description": "Hop across roads, rivers, and train tracks without getting hit.",
+    "longDescription":
+        "Crossy Road is an endless arcade hopper. Dodge traffic, hop across logs, evade trains, and collect coins. Don't stay still for too long or you're toast! Simple, addictive, and fun for all ages.",
+    "about": "The classic endless road crossing game.",
+    "aboutThisGame": {
+      "genre": "Arcade / Action",
+      "sessionLength": "Short bursts, 1-5 minutes",
+      "coreSkills": ["Timing", "Reflexes", "Planning"],
+      "bestFor": ["Casual play", "High score chasers"],
+      "monetization": "Free to play"
+    },
+    "features": ["Endless gameplay", "Retro voxel graphics", "Simple controls"],
+    "howToPlayQuick": {
+      "desktop": "Arrow keys to move",
+      "mobile": "Tap to move forward, swipe to move sideways",
+      "goal": "Go as far as you can"
+    },
+    "proTips": ["Look ahead for traffic patterns", "Don't wait too long"],
+    "whyPeopleLoveIt": ["Addictive gameplay", "Cute characters"],
+    "howToPlay": ["Tap to hop forward", "Swipe left/right to move sideways", "Avoid obstacles"],
+    "tags": ["arcade", "action", "retro", "voxel"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Simon Says",
+    "slug": "simon-says",
+    "gameUrl": "https://intelizia.com/games/simon_say_game/index.html",
+    "fullGameUrl": MyImages.simonSaysFull,
+    "halfGameUrl": MyImages.simonSaysHalf,
+    "imageUrl": "https://intelizia.com/games/simon_say_game/icon.png",
+    "description": "Memorize and repeat the sequence of lights and sounds.",
+    "longDescription":
+        "Test your memory with Simon Says. Watch the pattern of flashing lights and listen to the sounds, then repeat the sequence exactly. The patterns get longer and faster as you progress. How long can you keep up?",
+    "about": "A classic memory game of lights and sounds.",
+    "aboutThisGame": {
+      "genre": "Puzzle / Memory",
+      "sessionLength": "Varies",
+      "coreSkills": ["Memory", "Focus"],
+      "bestFor": ["Brain training", "Casual play"],
+      "monetization": "Free"
+    },
+    "features": ["Increasing difficulty", "Classic gameplay", "Audio feedback"],
+    "howToPlayQuick": {
+      "desktop": "Click the colored buttons",
+      "mobile": "Tap the colored buttons",
+      "goal": "Repeat the sequence correctly"
+    },
+    "proTips": ["Say the colors out loud", "Focus on the rhythm"],
+    "whyPeopleLoveIt": ["Simple yet challenging", "Improves memory"],
+    "howToPlay": ["Watch the sequence", "Repeat it back", "Don't make a mistake"],
+    "tags": ["memory", "puzzle", "classic"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Tower Block",
+    "slug": "tower-block",
+    "gameUrl": "https://intelizia.com/games/tower_block/index.html",
+    "fullGameUrl": MyImages.towerBlockFull,
+    "halfGameUrl": MyImages.towerBlockHalf,
+    "imageUrl": "https://intelizia.com/games/tower_block/icon.png",
+    "description": "Stack the blocks as high as you can to build a skyscraper.",
+    "longDescription":
+        "Tower Block is a game of precision and timing. Drop the moving blocks on top of each other to build the tallest tower possible. Any part of the block that overhangs will be cut off, making the next target smaller. Keep your cool and aim for the perfect stack.",
+    "about": "Build the highest tower by stacking blocks perfectly.",
+    "aboutThisGame": {
+      "genre": "Arcade / Skill",
+      "sessionLength": "Short rounds",
+      "coreSkills": ["Timing", "Precision"],
+      "bestFor": ["Quick breaks", "Competition"],
+      "monetization": "Free"
+    },
+    "features": ["One-tap gameplay", "Physics-based stacking", "Endless challenge"],
+    "howToPlayQuick": {
+      "desktop": "Click or Spacebar to drop",
+      "mobile": "Tap screen to drop",
+      "goal": "Build a high tower"
+    },
+    "proTips": ["Wait for the block to align", "Don't rush"],
+    "whyPeopleLoveIt": ["Satisfying perfect drops", "Easy to learn, hard to master"],
+    "howToPlay": ["Watch the moving block", "Tap to drop it on the stack", "Avoid overhanging"],
+    "tags": ["arcade", "stacking", "skill"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Whack A Mole",
+    "slug": "whack-a-mole",
+    "gameUrl": "https://intelizia.com/games/what_a_mole/index.html",
+    "fullGameUrl": MyImages.whackAMoleFull,
+    "halfGameUrl": MyImages.whackAMoleHalf,
+    "imageUrl": "https://intelizia.com/games/what_a_mole/icon.png",
+    "description": "Hit the moles as they pop up, but be quick!",
+    "longDescription":
+        "The classic carnival game comes to your screen. Moles pop up from their holes at random intervals. Your job is to whack them back down before they hide again. The game speeds up as you go, testing your reaction time. Watch out for special items or penalties!",
+    "about": "Test your reflexes in this classic arcade game.",
+    "aboutThisGame": {
+      "genre": "Arcade / Action",
+      "sessionLength": "Short rounds",
+      "coreSkills": ["Reflexes", "Hand-eye coordination"],
+      "bestFor": ["Stress relief", "Casual fun"],
+      "monetization": "Free"
+    },
+    "features": ["Fast-paced action", "Classic arcade feel", "Score tracking"],
+    "howToPlayQuick": {
+      "desktop": "Click the moles",
+      "mobile": "Tap the moles",
+      "goal": "Hit as many moles as possible"
+    },
+    "proTips": ["Keep your eyes moving", "Don't anticipate too much"],
+    "whyPeopleLoveIt": ["Satisfying gameplay", "Nostalgic fun"],
+    "howToPlay": ["Wait for a mole to appear", "Tap or click it quickly", "Score points"],
+    "tags": ["arcade", "action", "reflexes"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Candy Crush",
+    "slug": "candy-crush",
+    "gameUrl": "https://intelizia.com/games/candy_crush/index.html",
+    "fullGameUrl": MyImages.candyCrushFull,
+    "halfGameUrl": MyImages.candyCrushHalf,
+    "imageUrl": "https://intelizia.com/games/candy_crush/icon.png",
+    "description": "Match candies to clear the board.",
+    "longDescription":
+        "Classic match-3 puzzle game. Swap adjacent candies to create lines of three or more of the same color. Clear jellies, collect ingredients, and reach the target score.",
+    "about": "The sweet match-3 puzzle game.",
+    "aboutThisGame": {
+      "genre": "Puzzle / Match-3",
+      "sessionLength": "Short rounds",
+      "coreSkills": ["Pattern recognition", "Planning"],
+      "bestFor": ["Casual play", "Relaxation"],
+      "monetization": "Free"
+    },
+    "features": ["Colorful graphics", "Many levels", "Special candies"],
+    "howToPlayQuick": {
+      "desktop": "Click and drag to swap",
+      "mobile": "Swipe to swap",
+      "goal": "Match 3 or more candies"
+    },
+    "proTips": ["Look for 4 or 5 matches", "Save special candies"],
+    "whyPeopleLoveIt": ["Satisfying combos", "Relaxing gameplay"],
+    "howToPlay": ["Swap two candies", "Match 3 or more", "Complete the objective"],
+    "tags": ["puzzle", "match-3", "candy"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Gray Ball",
+    "slug": "gray-ball",
+    "gameUrl": "https://intelizia.com/games/gray_ball/index.html",
+    "fullGameUrl": MyImages.grayBallFull,
+    "halfGameUrl": MyImages.grayBallHalf,
+    "imageUrl": "https://intelizia.com/games/gray_ball/icon.png",
+    "description": "Navigate the gray ball through obstacles.",
+    "longDescription":
+        "A challenging physics-based game. Control the gray ball and navigate through a series of obstacles and traps to reach the goal.",
+    "about": "Physics-based ball navigation.",
+    "aboutThisGame": {
+      "genre": "Puzzle / Skill",
+      "sessionLength": "Varies",
+      "coreSkills": ["Precision", "Physics"],
+      "bestFor": ["Challenge seekers", "Puzzle fans"],
+      "monetization": "Free"
+    },
+    "features": ["Physics engine", "Challenging levels", "Minimalist design"],
+    "howToPlayQuick": {
+      "desktop": "Arrow keys or Mouse",
+      "mobile": "Tilt or touch",
+      "goal": "Reach the exit"
+    },
+    "proTips": ["Use momentum", "Be patient"],
+    "whyPeopleLoveIt": ["Challenging", "Rewarding"],
+    "howToPlay": ["Control the ball", "Avoid obstacles", "Reach the goal"],
+    "tags": ["puzzle", "physics", "ball"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Cat Catch",
+    "slug": "cat-catch",
+    "gameUrl": "https://intelizia.com/games/cat_catch/Cat/index.html",
+    "fullGameUrl": MyImages.catCatchFull,
+    "halfGameUrl": MyImages.catCatchHalf,
+    "imageUrl": "https://intelizia.com/games/cat_catch/icon.png",
+    "description": "Catch the falling items with the cat.",
+    "longDescription":
+        "Move the cat left and right to catch the falling items. Avoid dangerous objects. Collect power-ups to increase your score.",
+    "about": "A cute catching game.",
+    "aboutThisGame": {
+      "genre": "Arcade / Casual",
+      "sessionLength": "Short rounds",
+      "coreSkills": ["Reflexes", "Speed"],
+      "bestFor": ["Kids", "Casual play"],
+      "monetization": "Free"
+    },
+    "features": ["Cute graphics", "Simple gameplay", "Power-ups"],
+    "howToPlayQuick": {
+      "desktop": "Arrow keys to move",
+      "mobile": "Tap or swipe",
+      "goal": "Catch items"
+    },
+    "proTips": ["Watch for bombs", "Prioritize high value items"],
+    "whyPeopleLoveIt": ["Cute cat", "Relaxing"],
+    "howToPlay": ["Move the cat", "Catch good items", "Avoid bad items"],
+    "tags": ["arcade", "cat", "casual"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
     "title": "0h n0",
     "slug": "0h-n0",
-    "gameUrl": "https://0hn0.com/",
+    "gameUrl": "https://intelizia.com/games/ohh0/index.html",
     "fullGameUrl": MyImages.ohNoFull,
     "halfGameUrl": MyImages.ohNoHalf,
     "imageUrl": "https://0hn0.com/icon-192.png",
@@ -345,67 +427,9 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
     ],
   },
   {
-    "title": "Infectors",
-    "slug": "infectors",
-    "gameUrl": "https://satanas.github.io/infectors/",
-    "fullGameUrl": MyImages.infectorsFull,
-    "halfGameUrl": MyImages.infectors,
-    "imageUrl": "https://raw.githubusercontent.com/satanas/infectors/master/ss1.png",
-    "description":
-        "Sokoban-style puzzles: push cryogenic capsules to trap viruses across a set of handcrafted levels.",
-    "longDescription":
-        "Infectors is a compact, Sokoban-like puzzle game where every move matters. Your job is to push cryogenic capsules around a grid so they collide with viruses and contain the outbreak. The rules are simple—capsules slide one tile per push and obstacles block movement—but the layouts demand careful planning to avoid dead-ends and wasted moves.\n\nOriginally built in 2007 and later ported to the web, this version runs in the browser using JavaScript and Phaser. It includes 21 short, focused levels, a minimal HUD, and convenient hotkeys for restarting, pausing, and muting. The clean presentation keeps attention on the puzzle logic, making it easy to learn and satisfying to master.",
-    "about":
-        "Open-source browser puzzle by Wil Alvarez, written in JavaScript with Phaser and released under CC BY-NC-SA 4.0.",
-    "aboutThisGame": {
-      "genre": "Sokoban-like puzzle",
-      "sessionLength": "Most levels take 1–5 minutes; a full run can fit in a short break.",
-      "coreSkills": [
-        "Plan push sequences ahead",
-        "Prevent cornering capsules",
-        "Read the board to avoid dead-ends"
-      ],
-      "bestFor": [
-        "Fans of classic block-pushing puzzles",
-        "Quick coffee-break sessions",
-        "Keyboard-first desktop play"
-      ],
-      "monetization": "Free, no IAP/ads."
-    },
-    "features": [
-      "21 handcrafted levels with escalating complexity",
-      "Instant in-browser play—no download",
-      "Responsive keyboard controls: restart, pause/menu, mute",
-      "Clear objectives: trap every virus to finish a stage"
-    ],
-    "howToPlayQuick": {
-      "desktop": "Use arrow keys to move/push; Esc opens the menu, R restarts, Q quits, M mutes.",
-      "mobile": "Designed for keyboard play; touch-only devices are not fully supported.",
-      "goal": "Contain all viruses by pushing capsules into them without soft-locking the board."
-    },
-    "proTips": [
-      "Avoid pushing capsules into corners unless it captures a virus.",
-      "Walk the route mentally before the first push to spot traps.",
-      "Use quick restarts to iterate on tricky openings."
-    ],
-    "whyPeopleLoveIt": [
-      "Simple rules with puzzles that reward careful planning.",
-      "Short, satisfying levels that fit neatly into spare moments.",
-      "Clean, distraction-free presentation that highlights the logic."
-    ],
-    "howToPlay": [
-      "Load the game and review the brief tutorial.",
-      "Use the arrow keys to move and push capsules around walls and corridors.",
-      "Line up pushes so a capsule collides with a virus to contain it.",
-      "Clear all viruses to finish the level and advance to the next."
-    ],
-    "tags": ["sokoban", "puzzle", "grid-based", "browser", "phaser", "keyboard", "open source"],
-    "platform": ["Web"]
-  },
-  {
     "title": "Slow Roads",
     "slug": "slow-roads",
-    "gameUrl": "https://slowroads.io/",
+    "gameUrl": "https://intelizia.com/games/slow_road/index.html",
     "fullGameUrl": MyImages.carRacingFull,
     "halfGameUrl": MyImages.carRacingHalf,
     "imageUrl": "https://slowroads.io/favicon.ico",
@@ -476,81 +500,9 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
     ],
   },
   {
-    "title": "N-GON",
-    "slug": "n-gon",
-    "gameUrl": "https://landgreen.github.io/n-gon/",
-    "fullGameUrl": MyImages.robotFull,
-    "halfGameUrl": MyImages.robotHalf,
-    "imageUrl": "https://www.google.com/s2/favicons?sz=256&domain=landgreen.github.io",
-    "description":
-        "Physics-heavy browser roguelite arena — dodge waves, stack upgrades, and push a survival run as far as you can.",
-    "longDescription":
-        """N-GON is a fast, open-source arena shooter you can play directly in the browser. Each run drops you on a clean, readable battlefield where enemy shapes spawn in waves and pressure you to dodge, strafe, and line up shots. Between rounds you choose upgrades that stack together — extra projectiles, bouncing bullets, pierce, reload loops, or defensive fields — so a basic gun slowly turns into a wild physics-driven build. Because the visuals stay minimal and high-contrast, it’s easy to track bullets and attack cones, which means most failures come from your decisions, not clutter. There’s no grind, no download, and no paywall; every attempt is self-contained and perfect for short desktop gaming sessions or quick browser breaks. Veteran roguelite players can chase high-wave runs and experiment with perk synergies, while newcomers can simply practice movement and aiming. If you enjoy wave-based survival roguelites, browser physics shooters, or open-source WebGL action games, this one rewards smart positioning and upgrade choices.""",
-    "about":
-        "Compact, wave-based browser shooter where every run is fresh. Pick perks, test builds, survive as long as you can — no currency grind, no paywall.",
-    "aboutThisGame": {
-      "genre": "2D arena shooter / roguelite survival (browser)",
-      "sessionLength": "3–15 minutes per run, longer if your build snowballs.",
-      "coreSkills": [
-        "Precise WASD movement and mouse aiming under pressure.",
-        "Reading projectile paths and choosing safe spaces in the arena.",
-        "Building upgrade synergies that multiply damage or survivability."
-      ],
-      "bestFor": [
-        "Players who like Vampire Survivors–style escalation but want manual shooting.",
-        "Browser/desktop players who want quick action without downloading anything.",
-        "People curious about open-source WebGL / HTML5 shooter projects."
-      ],
-      "monetization": "Completely free to play in the browser — no ads, no gacha, no currencies."
-    },
-    "features": [
-      "Wave-by-wave arena fights with clear, high-contrast bullets and enemy shapes.",
-      "Upgradeable weapon paths: multishot, bounce, pierce, defensive fields, reload engines.",
-      "Instant retries so you can experiment with different perk chains right away.",
-      "Open-source project and community that tests balance and new content ideas."
-    ],
-    "howToPlayQuick": {
-      "desktop":
-          "Move with WASD, aim with the mouse, hold left-click to fire. Tap right-click or Space to trigger your temporary control/defense field.",
-      "mobile":
-          "Best played with keyboard and mouse for precise aiming; touch-only is possible but less accurate.",
-      "goal":
-          "Survive increasingly dense waves, grab an upgrade after each round, and turn your starter gun into a physics-heavy arena build that clears space fast."
-    },
-    "proTips": [
-      "Prioritize reload, projectile count, or bounce early — they make every later damage perk stronger.",
-      "Fight near corners or cover so enemies line up instead of surrounding you in open space.",
-      "Use the field ability early to create an escape lane; don’t wait until the arena is fully closed."
-    ],
-    "whyPeopleLoveIt": [
-      "Runs stay readable even when the screen is busy, so deaths feel fair.",
-      "Skill and build choices matter more than grinding resources.",
-      "Plays instantly in the browser — easy to share or play on a break."
-    ],
-    "howToPlay": [
-      "Use WASD to strafe, kite, and circle enemies while aiming and firing with the mouse.",
-      "Watch your field ability cooldown and trigger it to slow/control crowds or protect a retreat.",
-      "When choosing upgrades, pair hit-multipliers (multishot, bounce, pierce) with sustain (reload, shields) to handle late waves.",
-      "Control space: fight along walls and choke points to make narrow kill zones instead of running in the open middle."
-    ],
-    "tags": [
-      "shooter",
-      "roguelite",
-      "arena",
-      "open source",
-      "physics",
-      "browser",
-      "wave-based",
-      "webgl"
-    ],
-    "platform": [
-      "Web",
-    ],
-  },
-  {
     "title": "Hextris",
     "slug": "hextris",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/hextris/index.html",
+    "gameUrl": "https://intelizia.com/games/hextris/index.html",
     "fullGameUrl": MyImages.hextrisFull,
     "halfGameUrl": MyImages.hextris,
     "imageUrl": "https://github.com/Hextris/hextris/raw/gh-pages/images/twitter-opengraph.png",
@@ -618,7 +570,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "2D Breakout",
     "slug": "2d-breakout",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/2D_Breakout/index.html",
+    "gameUrl": "https://intelizia.com/games/2D_Breakout/index.html",
     "fullGameUrl": MyImages.twoDBreakoutFull,
     "halfGameUrl": MyImages.twoDBreakoutHalf,
     "imageUrl": "",
@@ -648,7 +600,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "3D Box Game",
     "slug": "3d-box-game",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/3d_Box_Game/index.html",
+    "gameUrl": "https://intelizia.com/games/3d_Box_Game/index.html",
     "fullGameUrl": MyImages.threeDBoxGameFull,
     "halfGameUrl": MyImages.threeDBoxGameHalf,
     "imageUrl": "",
@@ -677,7 +629,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "3D Snake",
     "slug": "3d-snake",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/3d_Snake/index.html",
+    "gameUrl": "https://intelizia.com/games/3d_Snake/index.html",
     "fullGameUrl": MyImages.threeDSnakeFull,
     "halfGameUrl": MyImages.threeDSnakeHalf,
     "imageUrl": "",
@@ -707,7 +659,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Aim Training",
     "slug": "aim-training",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/Aim_Training/index.html",
+    "gameUrl": "https://intelizia.com/games/Aim_Training/index.html",
     "fullGameUrl": MyImages.aimTrainingFull,
     "halfGameUrl": MyImages.aimTrainingHalf,
     "imageUrl": "",
@@ -736,7 +688,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "AirBalloon",
     "slug": "airballoon",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/AirBalloon/index.html",
+    "gameUrl": "https://intelizia.com/games/AirBalloon/index.html",
     "fullGameUrl": MyImages.airBalloonFull,
     "halfGameUrl": MyImages.airBalloonHalf,
     "imageUrl": "",
@@ -765,7 +717,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Arcade Game",
     "slug": "arcade-game",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/Arcade_Game/index.html",
+    "gameUrl": "https://intelizia.com/games/Arcade_Game/index.html",
     "fullGameUrl": MyImages.arcadeGameFull,
     "halfGameUrl": MyImages.arcadeGameHalf,
     "imageUrl": "",
@@ -794,7 +746,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Avoider Game",
     "slug": "avoider-game",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/Avoider_Game/index.html",
+    "gameUrl": "https://intelizia.com/games/Avoider_Game/index.html",
     "fullGameUrl": MyImages.avoiderGameFull,
     "halfGameUrl": MyImages.avoiderGameHalf,
     "imageUrl": "",
@@ -819,7 +771,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Block Ninjas",
     "slug": "block-ninjas",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/block_ninjas/index.html",
+    "gameUrl": "https://intelizia.com/games/block_ninjas/index.html",
     "fullGameUrl": MyImages.blockNinjasFull,
     "halfGameUrl": MyImages.blockNinjasHalf,
     "imageUrl": "",
@@ -848,7 +800,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Bounce Ball",
     "slug": "bounce-ball",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/Bounce_Ball/index.html",
+    "gameUrl": "https://intelizia.com/games/Bounce_Ball/index.html",
     "fullGameUrl": MyImages.bounceBallFull,
     "halfGameUrl": MyImages.bounceBallHalf,
     "imageUrl": "",
@@ -873,7 +825,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Cable Maze",
     "slug": "cable-maze",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/Cable_Maze/index.html",
+    "gameUrl": "https://intelizia.com/games/Cable_Maze/index.html",
     "fullGameUrl": MyImages.cableMazeFull,
     "halfGameUrl": MyImages.cableMazeHalf,
     "imageUrl": "",
@@ -902,7 +854,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Chrome Dinosaur Game",
     "slug": "chrome-dinosaur-game",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/Chrome_Dinosaur_Game/index.html",
+    "gameUrl": "https://intelizia.com/games/Chrome_Dinosaur_Game/index.html",
     "fullGameUrl": MyImages.chromeDinosaurGameFull,
     "halfGameUrl": MyImages.chromeDinosaurGameHalf,
     "imageUrl": "",
@@ -927,7 +879,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Cross The River Game",
     "slug": "cross-the-river-game",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/Cross_The_River_Game/index.html",
+    "gameUrl": "https://intelizia.com/games/Cross_The_River_Game/index.html",
     "fullGameUrl": MyImages.crossTheRiverGameFull,
     "halfGameUrl": MyImages.crossTheRiverGameHalf,
     "imageUrl": "",
@@ -956,7 +908,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Dodge the Blocks",
     "slug": "dodge-the-blocks",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/Dodge%20the%20Blocks/index.html",
+    "gameUrl": "https://intelizia.com/games/Dodge%20the%20Blocks/index.html",
     "fullGameUrl": MyImages.dodgeTheBlocksFull,
     "halfGameUrl": MyImages.dodgeTheBlocksHalf,
     "imageUrl": "",
@@ -985,7 +937,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Dante",
     "slug": "dante",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/Dante/index.html",
+    "gameUrl": "https://intelizia.com/games/Dante/index.html",
     "fullGameUrl": MyImages.danteFull,
     "halfGameUrl": MyImages.danteHalf,
     "imageUrl": "",
@@ -1010,7 +962,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Cut The Rope",
     "slug": "cut-the-rope",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/Cut_The_Rope/index.html",
+    "gameUrl": "https://intelizia.com/games/Cut_The_Rope/index.html",
     "fullGameUrl": MyImages.cutTheRopeFull,
     "halfGameUrl": MyImages.cutTheRopeHalf,
     "imageUrl":
@@ -1054,7 +1006,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Breaklock",
     "slug": "breaklock",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/Breaklock/index.html",
+    "gameUrl": "https://intelizia.com/games/Breaklock/index.html",
     "fullGameUrl": MyImages.breaklockFull,
     "halfGameUrl": MyImages.breaklockHalf,
     "imageUrl": "",
@@ -1084,7 +1036,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Astray",
     "slug": "astray",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/Astray/index.html",
+    "gameUrl": "https://intelizia.com/games/Astray/index.html",
     "fullGameUrl": MyImages.astrayFull,
     "halfGameUrl": MyImages.astrayHalf,
     "imageUrl": "",
@@ -1114,7 +1066,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Evil Glitch",
     "slug": "evil-glitch",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/evilglitch/index.html",
+    "gameUrl": "https://intelizia.com/games/evilglitch/index.html",
     "fullGameUrl": MyImages.evilGlitchFull,
     "halfGameUrl": MyImages.evilGlitchHalf,
     "imageUrl": "",
@@ -1145,44 +1097,44 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
     "tags": ["arcade", "shooter", "glitch", "js13k"],
     "platform": ["Web"]
   },
-  // {
-  //   "title": "Factory Balls Forever",
-  //   "slug": "factory-balls-forever",
-  //   "gameUrl": "https://aloca-flutter.netlify.app/games/factoryballsforever/index.html",
-  //   "fullGameUrl": MyImages.factoryBallsFull,
-  //   "halfGameUrl": MyImages.factoryBallsHalf,
-  //   "imageUrl": "",
-  //   "description": "Logic puzzle: paint the balls.",
-  //   "longDescription":
-  //       "A logical puzzle game where you must create specific ball designs by dipping them in paint and using various tools (hats, belts, etc.) to mask areas. Figure out the correct order of operations.",
-  //   "about": "A classic puzzle game by Bart Bonte.",
-  //   "aboutThisGame": {
-  //     "genre": "Logic Puzzle",
-  //     "sessionLength": "Short per level",
-  //     "coreSkills": ["Logic", "Planning"],
-  //     "bestFor": ["Puzzle lovers"],
-  //     "monetization": "Free"
-  //   },
-  //   "features": ["Creative puzzles", "Relaxing gameplay", "Many levels"],
-  //   "howToPlayQuick": {
-  //     "desktop": "Drag tools to the ball.",
-  //     "mobile": "Tap tools.",
-  //     "goal": "Match the target design."
-  //   },
-  //   "proTips": ["Think in reverse layers.", "Masks cover existing paint."],
-  //   "whyPeopleLoveIt": ["Satisfying logic", "Cute design"],
-  //   "howToPlay": [
-  //     "Check the target ball.",
-  //     "Apply paint and tools in order.",
-  //     "Create the perfect match."
-  //   ],
-  //   "tags": ["puzzle", "logic", "bart bonte"],
-  //   "platform": ["Web"]
-  // },
+  {
+    "title": "Factory Balls Forever",
+    "slug": "factory-balls-forever",
+    "gameUrl": "https://intelizia.com/games/factoryballsforever/index.html",
+    "fullGameUrl": MyImages.factoryBallsFull,
+    "halfGameUrl": MyImages.factoryBallsHalf,
+    "imageUrl": "",
+    "description": "Logic puzzle: paint the balls.",
+    "longDescription":
+        "A logical puzzle game where you must create specific ball designs by dipping them in paint and using various tools (hats, belts, etc.) to mask areas. Figure out the correct order of operations.",
+    "about": "A classic puzzle game by Bart Bonte.",
+    "aboutThisGame": {
+      "genre": "Logic Puzzle",
+      "sessionLength": "Short per level",
+      "coreSkills": ["Logic", "Planning"],
+      "bestFor": ["Puzzle lovers"],
+      "monetization": "Free"
+    },
+    "features": ["Creative puzzles", "Relaxing gameplay", "Many levels"],
+    "howToPlayQuick": {
+      "desktop": "Drag tools to the ball.",
+      "mobile": "Tap tools.",
+      "goal": "Match the target design."
+    },
+    "proTips": ["Think in reverse layers.", "Masks cover existing paint."],
+    "whyPeopleLoveIt": ["Satisfying logic", "Cute design"],
+    "howToPlay": [
+      "Check the target ball.",
+      "Apply paint and tools in order.",
+      "Create the perfect match."
+    ],
+    "tags": ["puzzle", "logic", "bart bonte"],
+    "platform": ["Web"]
+  },
   {
     "title": "2048",
     "slug": "2048",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/2048/index.html",
+    "gameUrl": "https://intelizia.com/games/2048/index.html",
     "fullGameUrl": MyImages.game2048Full,
     "halfGameUrl": MyImages.game2048Half,
     "imageUrl": "",
@@ -1212,7 +1164,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Pacman",
     "slug": "pacman",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/pacman/index.html",
+    "gameUrl": "https://intelizia.com/games/pacman/index.html",
     "fullGameUrl": MyImages.pacmanFull,
     "halfGameUrl": MyImages.pacmanHalf,
     "imageUrl": "",
@@ -1242,7 +1194,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Snake",
     "slug": "snake",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/snake/index.html",
+    "gameUrl": "https://intelizia.com/games/snake/index.html",
     "fullGameUrl": MyImages.snakeGameFull,
     "halfGameUrl": MyImages.snakeGameHalf,
     "imageUrl": "",
@@ -1272,7 +1224,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Asteroids",
     "slug": "asteroids",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/asteroids/index.html",
+    "gameUrl": "https://intelizia.com/games/asteroids/index.html",
     "fullGameUrl": MyImages.asteroidsFull,
     "halfGameUrl": MyImages.asteroidsHalf,
     "imageUrl": "",
@@ -1302,7 +1254,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Chess",
     "slug": "chess",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/chess/index.html",
+    "gameUrl": "https://intelizia.com/games/chess/index.html",
     "fullGameUrl": MyImages.chessFull,
     "halfGameUrl": MyImages.chessHalf,
     "imageUrl": "",
@@ -1329,40 +1281,10 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
     "tags": ["strategy", "board", "classic"],
     "platform": ["Web"]
   },
-  // {
-  //   "title": "Underrun",
-  //   "slug": "underrun",
-  //   "gameUrl": "https://aloca-flutter.netlify.app/games/underrun/index.html",
-  //   "fullGameUrl": MyImages.underrunFull,
-  //   "halfGameUrl": MyImages.underrunHalf,
-  //   "imageUrl": "",
-  //   "description": "Twin-stick shooter in a facility.",
-  //   "longDescription":
-  //       "A twin-stick shooter set in a dark, abandoned facility. Fight off waves of enemies and restore power to the systems.",
-  //   "about": "A JS13K competition winner.",
-  //   "aboutThisGame": {
-  //     "genre": "Shooter",
-  //     "sessionLength": "Medium",
-  //     "coreSkills": ["Reflexes", "Aiming"],
-  //     "bestFor": ["Action fans"],
-  //     "monetization": "Free"
-  //   },
-  //   "features": ["Atmospheric lighting", "Smooth controls", "Story elements"],
-  //   "howToPlayQuick": {
-  //     "desktop": "WASD move, Arrows/Mouse shoot.",
-  //     "mobile": "Touch sticks.",
-  //     "goal": "Restore systems."
-  //   },
-  //   "proTips": ["Keep moving backwards.", "Use cover."],
-  //   "whyPeopleLoveIt": ["Mood", "Polished gameplay"],
-  //   "howToPlay": ["Move through the facility.", "Shoot enemies.", "Activate terminals."],
-  //   "tags": ["shooter", "action", "scifi"],
-  //   "platform": ["Web"]
-  // },
   {
     "title": "Q1K3",
     "slug": "q1k3",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/q1k3/index.html",
+    "gameUrl": "https://intelizia.com/games/q1k3/index.html",
     "fullGameUrl": MyImages.q1k3Full,
     "halfGameUrl": MyImages.q1k3Half,
     "imageUrl": "",
@@ -1392,7 +1314,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Radius Raid",
     "slug": "radius-raid",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/radiusraid/index.html",
+    "gameUrl": "https://intelizia.com/games/radiusraid/index.html",
     "fullGameUrl": MyImages.radiusRaidFull,
     "halfGameUrl": MyImages.radiusRaidHalf,
     "imageUrl": "",
@@ -1422,7 +1344,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Racer",
     "slug": "racer",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/racer/index.html",
+    "gameUrl": "https://intelizia.com/games/racer/index.html",
     "fullGameUrl": MyImages.racerFull,
     "halfGameUrl": MyImages.racerHalf,
     "imageUrl": "",
@@ -1452,7 +1374,7 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
   {
     "title": "Connect3",
     "slug": "connect3",
-    "gameUrl": "https://aloca-flutter.netlify.app/games/connect3/index.html",
+    "gameUrl": "https://intelizia.com/games/connect3/index.html",
     "fullGameUrl": MyImages.connect3Full,
     "halfGameUrl": MyImages.connect3Half,
     "imageUrl": "",
