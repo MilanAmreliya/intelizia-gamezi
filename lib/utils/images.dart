@@ -175,4 +175,27 @@ abstract class MyImages {
 
   static const underrunFull = '$_basePath/underrun_full.png';
   static const underrunHalf = '$_basePath/underrun_half.png';
+
+  static const wordSprintFull = '$_basePath/word_sprint_full.png';
+  static const wordSprintHalf = '$_basePath/word_sprint_half.png';
+  static const wordShuffleFull = '$_basePath/word_shuffle_full.png';
+  static const wordShuffleHalf = '$_basePath/word_shuffle_half.png';
+  static const theLastSpartanFull = '$_basePath/the_last_partman_full.png';
+  static const theLastSpartanHalf = '$_basePath/the_last_partman_half.png';
+  static const unrulyTowerFull = '$_basePath/untruly_tower_full.png';
+  static const unrulyTowerHalf = '$_basePath/untruly_tower_half.png';
+  static const uxuFull = '$_basePath/uxu_full.png';
+  static const uxuHalf = '$_basePath/uxu_half.png';
+  static const sudokuFull = '$_basePath/sudoku_full.png';
+  static const sudokuHalf = '$_basePath/sudoku_half.png';
+  static const touchTheBallFull = '$_basePath/touch_the_ball_full.png';
+  static const touchTheBallHalf = '$_basePath/touch_the_ball_half.png';
+  static const runAndJumpFull = '$_basePath/run_and_jump_full.png';
+  static const runAndJumpHalf = '$_basePath/run_and_jump_half.png';
+  static const unoFull = '$_basePath/uno_full.png';
+  static const unoHalf = '$_basePath/uno_half.png';
+
+  // Placeholder for Zurbo as images were not found
+  static const zurboFull = '$_basePath/zurbo_full.png';
+  static const zurboHalf = '$_basePath/zurbo_half.png';
 }

@@ -1098,40 +1098,6 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
     "platform": ["Web"]
   },
   {
-    "title": "Factory Balls Forever",
-    "slug": "factory-balls-forever",
-    "gameUrl": "https://intelizia.com/games/factoryballsforever/index.html",
-    "fullGameUrl": MyImages.factoryBallsFull,
-    "halfGameUrl": MyImages.factoryBallsHalf,
-    "imageUrl": "",
-    "description": "Logic puzzle: paint the balls.",
-    "longDescription":
-        "A logical puzzle game where you must create specific ball designs by dipping them in paint and using various tools (hats, belts, etc.) to mask areas. Figure out the correct order of operations.",
-    "about": "A classic puzzle game by Bart Bonte.",
-    "aboutThisGame": {
-      "genre": "Logic Puzzle",
-      "sessionLength": "Short per level",
-      "coreSkills": ["Logic", "Planning"],
-      "bestFor": ["Puzzle lovers"],
-      "monetization": "Free"
-    },
-    "features": ["Creative puzzles", "Relaxing gameplay", "Many levels"],
-    "howToPlayQuick": {
-      "desktop": "Drag tools to the ball.",
-      "mobile": "Tap tools.",
-      "goal": "Match the target design."
-    },
-    "proTips": ["Think in reverse layers.", "Masks cover existing paint."],
-    "whyPeopleLoveIt": ["Satisfying logic", "Cute design"],
-    "howToPlay": [
-      "Check the target ball.",
-      "Apply paint and tools in order.",
-      "Create the perfect match."
-    ],
-    "tags": ["puzzle", "logic", "bart bonte"],
-    "platform": ["Web"]
-  },
-  {
     "title": "2048",
     "slug": "2048",
     "gameUrl": "https://intelizia.com/games/2048/index.html",
@@ -1399,5 +1365,296 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
     "howToPlay": ["Connect matching items.", "Clear the board.", "Get high score."],
     "tags": ["puzzle", "match-3", "hex"],
     "platform": ["Web"]
+  },
+  {
+    "title": "WordSprint",
+    "slug": "word-sprint",
+    "gameUrl": "https://intelizia.com/games/WordSprint/index.html",
+    "fullGameUrl": MyImages.wordSprintFull,
+    "halfGameUrl": MyImages.wordSprintHalf,
+    "imageUrl": "https://intelizia.com/games/word_sprint/icon.png",
+    "description": "A fast-paced word puzzle game.",
+    "longDescription":
+        "Race against the clock to find words in this exciting puzzle game. Test your vocabulary and speed.",
+    "about": "Fast-paced word finding action.",
+    "aboutThisGame": {
+      "genre": "Puzzle / Word",
+      "sessionLength": "Short",
+      "coreSkills": ["Vocabulary", "Speed"],
+      "bestFor": ["Word game fans"],
+      "monetization": "Free"
+    },
+    "features": ["Timed mode", "Endless words"],
+    "howToPlayQuick": {
+      "desktop": "Click/Drag to form words.",
+      "mobile": "Swipe to form words.",
+      "goal": "Find words."
+    },
+    "proTips": ["Look for short words first.", "Be quick."],
+    "whyPeopleLoveIt": ["Challenging", "Fun"],
+    "howToPlay": ["Connect letters.", "Make words.", "Score points."],
+    "tags": ["word", "puzzle", "sprint"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Zurbo",
+    "slug": "zurbo",
+    "gameUrl": "https://intelizia.com/games/Zurbo/index.html",
+    "fullGameUrl": MyImages.zurboFull,
+    "halfGameUrl": MyImages.zurboHalf,
+    "imageUrl": "https://intelizia.com/games/zurbo/icon.png",
+    "description": "An exciting arcade game.",
+    "longDescription": "Experience the thrill of Zurbo. (Description placeholder)",
+    "about": "Arcade fun.",
+    "aboutThisGame": {
+      "genre": "Arcade",
+      "sessionLength": "Short",
+      "coreSkills": ["Reflexes"],
+      "bestFor": ["Casual play"],
+      "monetization": "Free"
+    },
+    "features": ["Fun gameplay"],
+    "howToPlayQuick": {
+      "desktop": "Play with mouse/keyboard.",
+      "mobile": "Touch controls.",
+      "goal": "Win the game."
+    },
+    "proTips": ["Practice makes perfect."],
+    "whyPeopleLoveIt": ["Fun"],
+    "howToPlay": ["Start game.", "Play.", "Win."],
+    "tags": ["arcade", "zurbo"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Word Shuffle",
+    "slug": "word-shuffle-game",
+    "gameUrl": "https://intelizia.com/games/Word_Shuffle_Game/index.html",
+    "fullGameUrl": MyImages.wordShuffleFull,
+    "halfGameUrl": MyImages.wordShuffleHalf,
+    "imageUrl": "https://intelizia.com/games/word_shuffle/icon.png",
+    "description": "Unscramble the letters to form words.",
+    "longDescription":
+        "Challenge your brain with Word Shuffle. Rearrange the shuffled letters to find the hidden words.",
+    "about": "Word unscrambling puzzle.",
+    "aboutThisGame": {
+      "genre": "Puzzle / Word",
+      "sessionLength": "Varies",
+      "coreSkills": ["Vocabulary", "Logic"],
+      "bestFor": ["Puzzle lovers"],
+      "monetization": "Free"
+    },
+    "features": ["Many levels", "Brain training"],
+    "howToPlayQuick": {
+      "desktop": "Click letters.",
+      "mobile": "Tap letters.",
+      "goal": "Form correct words."
+    },
+    "proTips": ["Think of common patterns."],
+    "whyPeopleLoveIt": ["Relaxing", "Educational"],
+    "howToPlay": ["Look at letters.", "Form a word.", "Submit."],
+    "tags": ["word", "shuffle", "puzzle"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "The Last Spartan",
+    "slug": "the-last-spartan",
+    "gameUrl": "https://intelizia.com/games/The_Last_Spartan/index.html",
+    "fullGameUrl": MyImages.theLastSpartanFull,
+    "halfGameUrl": MyImages.theLastSpartanHalf,
+    "imageUrl": "https://intelizia.com/games/the_last_partman/icon.png",
+    "description": "Defend against waves of enemies.",
+    "longDescription":
+        "You are the last Spartan. Stand your ground and fight off the incoming hordes of enemies in this action-packed game.",
+    "about": "Action defense game.",
+    "aboutThisGame": {
+      "genre": "Action / Defense",
+      "sessionLength": "Medium",
+      "coreSkills": ["Combat", "Strategy"],
+      "bestFor": ["Action fans"],
+      "monetization": "Free"
+    },
+    "features": ["Epic battles", "Upgrades"],
+    "howToPlayQuick": {
+      "desktop": "Attack and defend.",
+      "mobile": "Tap to fight.",
+      "goal": "Survive."
+    },
+    "proTips": ["Time your attacks.", "Watch your health."],
+    "whyPeopleLoveIt": ["Exciting combat"],
+    "howToPlay": ["Fight enemies.", "Survive waves.", "Be the hero."],
+    "tags": ["action", "spartan", "fight"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Unruly Tower",
+    "slug": "unruly-tower",
+    "gameUrl": "https://intelizia.com/games/Unruly_Tower/index.html",
+    "fullGameUrl": MyImages.unrulyTowerFull,
+    "halfGameUrl": MyImages.unrulyTowerHalf,
+    "imageUrl": "https://intelizia.com/games/untruly_tower/icon.png",
+    "description": "Build a tower and keep it steady.",
+    "longDescription":
+        "Stack blocks to build the highest tower possible, but watch out - it might get unruly! Balance is key.",
+    "about": "Tower building physics game.",
+    "aboutThisGame": {
+      "genre": "Arcade / Physics",
+      "sessionLength": "Short",
+      "coreSkills": ["Precision", "Timing"],
+      "bestFor": ["Casual play"],
+      "monetization": "Free"
+    },
+    "features": ["Physics based", "Endless"],
+    "howToPlayQuick": {"desktop": "Drop blocks.", "mobile": "Tap to drop.", "goal": "Build high."},
+    "proTips": ["Align carefully."],
+    "whyPeopleLoveIt": ["Addictive"],
+    "howToPlay": ["Drop blocks.", "Don't let it fall.", "Reach the sky."],
+    "tags": ["tower", "stack", "physics"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Uxu",
+    "slug": "uxu",
+    "gameUrl": "https://intelizia.com/games/Uxu/index.html",
+    "fullGameUrl": MyImages.uxuFull,
+    "halfGameUrl": MyImages.uxuHalf,
+    "imageUrl": "https://intelizia.com/games/uxu/icon.png",
+    "description": "A minimalist puzzle game.",
+    "longDescription":
+        "Uxu is a logic puzzle game with a clean, minimalist design. Solve the challenges and progress through levels.",
+    "about": "Minimalist logic puzzle.",
+    "aboutThisGame": {
+      "genre": "Puzzle",
+      "sessionLength": "Varies",
+      "coreSkills": ["Logic"],
+      "bestFor": ["Thinkers"],
+      "monetization": "Free"
+    },
+    "features": ["Clean design", "Brain teasers"],
+    "howToPlayQuick": {
+      "desktop": "Click to interact.",
+      "mobile": "Tap to interact.",
+      "goal": "Solve the puzzle."
+    },
+    "proTips": ["Think outside the box."],
+    "whyPeopleLoveIt": ["Simple yet deep"],
+    "howToPlay": ["Understand the rule.", "Solve the level.", "Advance."],
+    "tags": ["puzzle", "minimalist", "logic"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Sudoku",
+    "slug": "sudoku",
+    "gameUrl": "https://intelizia.com/games/Sudoku/index.html",
+    "fullGameUrl": MyImages.sudokuFull,
+    "halfGameUrl": MyImages.sudokuHalf,
+    "imageUrl": "https://intelizia.com/games/sudoku/icon.png",
+    "description": "The classic number puzzle game.",
+    "longDescription":
+        "Play the classic Sudoku game. Fill the grid so that every row, column, and 3x3 box contains the digits 1 to 9.",
+    "about": "Classic Sudoku.",
+    "aboutThisGame": {
+      "genre": "Puzzle / Logic",
+      "sessionLength": "Medium",
+      "coreSkills": ["Logic", "Deduction"],
+      "bestFor": ["Everyone"],
+      "monetization": "Free"
+    },
+    "features": ["Multiple difficulties", "Classic rules"],
+    "howToPlayQuick": {
+      "desktop": "Click cell, type number.",
+      "mobile": "Tap cell, select number.",
+      "goal": "Fill the grid."
+    },
+    "proTips": ["Scan rows and columns.", "Use notes."],
+    "whyPeopleLoveIt": ["Classic brain training"],
+    "howToPlay": ["Select a cell.", "Enter a number 1-9.", "Complete the grid."],
+    "tags": ["sudoku", "puzzle", "number"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Touch The Ball",
+    "slug": "touch-the-ball",
+    "gameUrl": "https://intelizia.com/games/Touch_The_Ball/index.html",
+    "fullGameUrl": MyImages.touchTheBallFull,
+    "halfGameUrl": MyImages.touchTheBallHalf,
+    "imageUrl": "https://intelizia.com/games/touch_the_ball/icon.png",
+    "description": "Keep the ball in the air.",
+    "longDescription":
+        "Test your reflexes in Touch The Ball. Don't let the ball touch the ground. How long can you keep it up?",
+    "about": "Reflex game.",
+    "aboutThisGame": {
+      "genre": "Arcade / Sport",
+      "sessionLength": "Short",
+      "coreSkills": ["Reflexes", "Timing"],
+      "bestFor": ["Quick fun"],
+      "monetization": "Free"
+    },
+    "features": ["Simple controls", "Addictive"],
+    "howToPlayQuick": {
+      "desktop": "Click the ball.",
+      "mobile": "Tap the ball.",
+      "goal": "Keep it up."
+    },
+    "proTips": ["Watch the trajectory."],
+    "whyPeopleLoveIt": ["Simple fun"],
+    "howToPlay": ["Tap the ball.", "Don't drop it.", "Score points."],
+    "tags": ["ball", "arcade", "touch"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Run and Jump",
+    "slug": "run-and-jump",
+    "gameUrl": "https://intelizia.com/games/Run and Jump/index.html",
+    "fullGameUrl": MyImages.runAndJumpFull,
+    "halfGameUrl": MyImages.runAndJumpHalf,
+    "imageUrl": "https://intelizia.com/games/run_and_jump/icon.png",
+    "description": "Run, jump, and avoid obstacles.",
+    "longDescription":
+        "A classic endless runner. Jump over obstacles, collect items, and run as far as you can.",
+    "about": "Endless runner.",
+    "aboutThisGame": {
+      "genre": "Arcade / Runner",
+      "sessionLength": "Short",
+      "coreSkills": ["Reflexes", "Timing"],
+      "bestFor": ["Casual play"],
+      "monetization": "Free"
+    },
+    "features": ["Endless", "Fast paced"],
+    "howToPlayQuick": {"desktop": "Space to jump.", "mobile": "Tap to jump.", "goal": "Run far."},
+    "proTips": ["Time your jumps."],
+    "whyPeopleLoveIt": ["Classic genre"],
+    "howToPlay": ["Run forward.", "Jump over obstacles.", "Don't crash."],
+    "tags": ["runner", "jump", "arcade"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Uno",
+    "slug": "uno",
+    "gameUrl": "https://intelizia.com/games/UNO/index.html",
+    "fullGameUrl": MyImages.unoFull,
+    "halfGameUrl": MyImages.unoHalf,
+    "imageUrl": "https://intelizia.com/games/uno/icon.png",
+    "description": "The classic card game.",
+    "longDescription":
+        "Play the popular card game Uno. Match colors and numbers, use action cards, and be the first to get rid of all your cards.",
+    "about": "Classic card game.",
+    "aboutThisGame": {
+      "genre": "Card Game",
+      "sessionLength": "Medium",
+      "coreSkills": ["Strategy", "Luck"],
+      "bestFor": ["Groups", "Families"],
+      "monetization": "Free"
+    },
+    "features": ["Multiplayer", "Classic rules"],
+    "howToPlayQuick": {
+      "desktop": "Click cards to play.",
+      "mobile": "Tap cards to play.",
+      "goal": "Empty hand."
+    },
+    "proTips": ["Save wild cards.", "Watch opponents."],
+    "whyPeopleLoveIt": ["Social fun"],
+    "howToPlay": ["Match color or number.", "Use action cards.", "Say Uno!"],
+    "tags": ["card", "uno", "classic"],
+    "platform": ["Web", "Mobile"]
   }
 ];
