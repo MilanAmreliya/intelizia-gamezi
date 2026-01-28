@@ -198,4 +198,21 @@ abstract class MyImages {
   // Placeholder for Zurbo as images were not found
   static const zurboFull = '$_basePath/zurbo_full.png';
   static const zurboHalf = '$_basePath/zurbo_half.png';
+
+  static const threeDCubeFull = '$_basePath/cube_full.png';
+  static const threeDCubeHalf = '$_basePath/cube_half.png';
+  static const dontDieToGhostsFull = '$_basePath/dont_die_to_ghost_full.png';
+  static const dontDieToGhostsHalf = '$_basePath/dont_die_to_ghost_half.png';
+  static const duckHuntFull = '$_basePath/dock_hunt_full.png';
+  static const duckHuntHalf = '$_basePath/dock_hunt_half.png';
+  static const everyonesSkyFull = '$_basePath/everyone_sky_full.png';
+  static const everyonesSkyHalf = '$_basePath/everyone_sky_half.png';
+  static const galaxyRiderFull = '$_basePath/galaxy_rider_full.png';
+  static const galaxyRiderHalf = '$_basePath/galaxy_rider_half.png';
+  static const findTheMissingLetterFull = '$_basePath/missing_letter_full.png';
+  static const findTheMissingLetterHalf = '$_basePath/missing_letter_half.png';
+  static const glitchBusterFull = '$_basePath/glitch_buster_full.png';
+  static const glitchBusterHalf = '$_basePath/glitch_buster_half.png';
+  static const hedgehogHavocFull = '$_basePath/hedgehog_full.png';
+  static const hedgehogHavocHalf = '$_basePath/hedgehog_half.png';
 }

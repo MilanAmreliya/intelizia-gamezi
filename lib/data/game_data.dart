@@ -1656,5 +1656,215 @@ The interface stays intentionally minimal: high-contrast tiles, simple desktop c
     "howToPlay": ["Match color or number.", "Use action cards.", "Say Uno!"],
     "tags": ["card", "uno", "classic"],
     "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "3D Cube Puzzle",
+    "slug": "3d-cube-puzzle",
+    "gameUrl": "https://intelizia.com/games/3D-cube-puzzle-game-main/index.html",
+    "fullGameUrl": MyImages.threeDCubeFull,
+    "halfGameUrl": MyImages.threeDCubeHalf,
+    "imageUrl": "https://intelizia.com/games/3D-cube-puzzle-game-main/icon.png",
+    "description": "A challenging 3D puzzle game.",
+    "longDescription":
+        "Solve complex 3D puzzles by rotating and matching cubes. Test your spatial awareness and logic skills.",
+    "about": "3D spatial puzzle.",
+    "aboutThisGame": {
+      "genre": "Puzzle / 3D",
+      "sessionLength": "Medium",
+      "coreSkills": ["Spatial Awareness", "Logic"],
+      "bestFor": ["Puzzle enthusiasts"],
+      "monetization": "Free"
+    },
+    "features": ["3D graphics", "Challenging levels"],
+    "howToPlayQuick": {
+      "desktop": "Mouse to rotate and interact.",
+      "mobile": "Touch to rotate and interact.",
+      "goal": "Solve the puzzle."
+    },
+    "proTips": ["Visualize the solution.", "Rotate frequently."],
+    "whyPeopleLoveIt": ["Brain teasing", "Visually appealing"],
+    "howToPlay": ["Rotate the cube.", "Match patterns.", "Complete the level."],
+    "tags": ["3d", "puzzle", "cube"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Don't Die To Ghosts",
+    "slug": "dont-die-to-ghosts",
+    "gameUrl": "https://intelizia.com/games/Dont_Die_To_Ghosts/index.html",
+    "fullGameUrl": MyImages.dontDieToGhostsFull,
+    "halfGameUrl": MyImages.dontDieToGhostsHalf,
+    "imageUrl": "https://intelizia.com/games/Dont_Die_To_Ghosts/icon.png",
+    "description": "Survive against waves of ghosts.",
+    "longDescription":
+        "Avoid the ghosts and stay alive as long as possible. A fast-paced survival game that tests your reflexes.",
+    "about": "Survival arcade game.",
+    "aboutThisGame": {
+      "genre": "Arcade / Survival",
+      "sessionLength": "Short",
+      "coreSkills": ["Reflexes", "Evasion"],
+      "bestFor": ["Action fans"],
+      "monetization": "Free"
+    },
+    "features": ["Spooky theme", "Fast gameplay"],
+    "howToPlayQuick": {
+      "desktop": "Arrow keys to move.",
+      "mobile": "Touch controls.",
+      "goal": "Survive."
+    },
+    "proTips": ["Keep moving.", "Watch the corners."],
+    "whyPeopleLoveIt": ["Thrilling", "Simple fun"],
+    "howToPlay": ["Move to avoid ghosts.", "Survive as long as you can.", "Get high score."],
+    "tags": ["ghosts", "survival", "arcade"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Everyone's Sky",
+    "slug": "everyones-sky",
+    "gameUrl": "https://intelizia.com/games/Everyones_Sky/index.html",
+    "fullGameUrl": MyImages.everyonesSkyFull,
+    "halfGameUrl": MyImages.everyonesSkyHalf,
+    "imageUrl": "https://intelizia.com/games/Everyones_Sky/icon.png",
+    "description": "Explore the vast sky.",
+    "longDescription":
+        "A relaxing exploration game where you travel through the sky. Discover new places and enjoy the view.",
+    "about": "Exploration game.",
+    "aboutThisGame": {
+      "genre": "Adventure / Exploration",
+      "sessionLength": "Long",
+      "coreSkills": ["Curiosity"],
+      "bestFor": ["Explorers"],
+      "monetization": "Free"
+    },
+    "features": ["Open world", "Relaxing"],
+    "howToPlayQuick": {
+      "desktop": "Arrow keys to fly.",
+      "mobile": "Touch controls.",
+      "goal": "Explore."
+    },
+    "proTips": ["Take your time.", "Look for secrets."],
+    "whyPeopleLoveIt": ["Peaceful", "Beautiful"],
+    "howToPlay": ["Fly around.", "Discover areas.", "Enjoy."],
+    "tags": ["sky", "exploration", "adventure"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Galaxy Rider",
+    "slug": "galaxy-rider",
+    "gameUrl": "https://intelizia.com/games/Galaxy_Rider/index.html",
+    "fullGameUrl": MyImages.galaxyRiderFull,
+    "halfGameUrl": MyImages.galaxyRiderHalf,
+    "imageUrl": "https://intelizia.com/games/Galaxy_Rider/icon.png",
+    "description": "Ride through the galaxy.",
+    "longDescription":
+        "Navigate your spaceship through the galaxy, avoiding obstacles and collecting stars.",
+    "about": "Space runner.",
+    "aboutThisGame": {
+      "genre": "Arcade / Space",
+      "sessionLength": "Short",
+      "coreSkills": ["Reflexes", "Steering"],
+      "bestFor": ["Sci-fi fans"],
+      "monetization": "Free"
+    },
+    "features": ["Space theme", "Fast action"],
+    "howToPlayQuick": {
+      "desktop": "Arrow keys to steer.",
+      "mobile": "Tilt or touch.",
+      "goal": "Travel far."
+    },
+    "proTips": ["Watch for asteroids.", "Collect powerups."],
+    "whyPeopleLoveIt": ["Exciting", "Visuals"],
+    "howToPlay": ["Steer ship.", "Dodge obstacles.", "Ride the galaxy."],
+    "tags": ["galaxy", "space", "rider"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Find The Missing Letter",
+    "slug": "find-the-missing-letter",
+    "gameUrl": "https://intelizia.com/games/Find_The_Missing_Letter/index.html",
+    "fullGameUrl": MyImages.findTheMissingLetterFull,
+    "halfGameUrl": MyImages.findTheMissingLetterHalf,
+    "imageUrl": "https://intelizia.com/games/Find_The_Missing_Letter/icon.png",
+    "description": "Educational word game.",
+    "longDescription":
+        "Complete the words by finding the missing letter. A great way to improve vocabulary and spelling.",
+    "about": "Educational puzzle.",
+    "aboutThisGame": {
+      "genre": "Educational / Word",
+      "sessionLength": "Varies",
+      "coreSkills": ["Spelling", "Vocabulary"],
+      "bestFor": ["Kids", "Learners"],
+      "monetization": "Free"
+    },
+    "features": ["Learning focus", "Simple interface"],
+    "howToPlayQuick": {
+      "desktop": "Click the missing letter.",
+      "mobile": "Tap the missing letter.",
+      "goal": "Complete words."
+    },
+    "proTips": ["Read the word carefully."],
+    "whyPeopleLoveIt": ["Educational", "Fun learning"],
+    "howToPlay": ["Read the incomplete word.", "Select the correct letter.", "Win."],
+    "tags": ["word", "educational", "spelling"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Glitch Buster",
+    "slug": "glitch-buster",
+    "gameUrl": "https://intelizia.com/games/Glitch_Buster/index.html",
+    "fullGameUrl": MyImages.glitchBusterFull,
+    "halfGameUrl": MyImages.glitchBusterHalf,
+    "imageUrl": "https://intelizia.com/games/Glitch_Buster/icon.png",
+    "description": "Fix the glitches in the system.",
+    "longDescription":
+        "You are a Glitch Buster. Enter the digital world and eliminate the bugs and glitches threatening the system.",
+    "about": "Action platformer.",
+    "aboutThisGame": {
+      "genre": "Action / Platformer",
+      "sessionLength": "Medium",
+      "coreSkills": ["Platforming", "Combat"],
+      "bestFor": ["Gamers"],
+      "monetization": "Free"
+    },
+    "features": ["Retro style", "Action packed"],
+    "howToPlayQuick": {
+      "desktop": "Arrow keys to move/jump.",
+      "mobile": "Touch controls.",
+      "goal": "Clear glitches."
+    },
+    "proTips": ["Master the jump.", "Shoot glitches."],
+    "whyPeopleLoveIt": ["Retro feel", "Challenge"],
+    "howToPlay": ["Run and jump.", "Defeat enemies.", "Fix the system."],
+    "tags": ["glitch", "platformer", "action"],
+    "platform": ["Web", "Mobile"]
+  },
+  {
+    "title": "Hedgehog Havoc",
+    "slug": "hedgehog-havoc",
+    "gameUrl": "https://intelizia.com/games/Hedgehog_Havoc/index.html",
+    "fullGameUrl": MyImages.hedgehogHavocFull,
+    "halfGameUrl": MyImages.hedgehogHavocHalf,
+    "imageUrl": "https://intelizia.com/games/Hedgehog_Havoc/icon.png",
+    "description": "Roll and cause havoc.",
+    "longDescription":
+        "Control a hedgehog and roll through levels, collecting items and avoiding danger. Speed is your friend.",
+    "about": "Platformer runner.",
+    "aboutThisGame": {
+      "genre": "Platformer",
+      "sessionLength": "Short",
+      "coreSkills": ["Timing", "Speed"],
+      "bestFor": ["Sonic fans"],
+      "monetization": "Free"
+    },
+    "features": ["Fast gameplay", "Rolling mechanics"],
+    "howToPlayQuick": {
+      "desktop": "Arrow keys to roll.",
+      "mobile": "Touch controls.",
+      "goal": "Finish level."
+    },
+    "proTips": ["Keep momentum.", "Watch out for spikes."],
+    "whyPeopleLoveIt": ["Fast fun", "Cute character"],
+    "howToPlay": ["Roll.", "Jump.", "Collect rings."],
+    "tags": ["hedgehog", "platformer", "speed"],
+    "platform": ["Web", "Mobile"]
   }
 ];
